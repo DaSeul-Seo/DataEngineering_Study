@@ -231,7 +231,8 @@ __getiten__ : 인덱싱, 슬라이싱을 가능하게 한다.
     - 변수, 함수, 클래스를 모아놓은 파일
 - 패키지(Package)
     - 모듈을 모아놓은 것
-
+- ⭐if _ _ name _ _ = “_ _ main _ _”:
+    - 이 것으로 실행해야 안전하다.
 ```python
 # 모듈 불러오기
 import <모듈명>
@@ -265,9 +266,10 @@ def add(a, b):
 def sub(a, b):
   return a - b
 
-**if __name__ == "__main__":
+⭐
+if __name__ == "__main__":
   print(add(3, 5))
-  print(sub(5, 3))**
+  print(sub(5, 3))
 ```
 
 ```python
