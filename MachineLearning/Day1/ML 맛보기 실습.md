@@ -67,7 +67,8 @@
     ```
     
 4. 데이터 점검 및 탐색
-    1. test 데이터는 탐색하지 않음
+    1. EDA (Exploratory Data Analysis) : 탐색적 데이터 분석
+    2. test 데이터는 탐색하지 않음
     
     ```python
     train.head()     # 위에 데이터
@@ -76,7 +77,7 @@
     train.describe() # 통계값 (최소값, 최대값, 평균, 표준편차 등등)
     ```
     
-5. 전처리 및 정제
+6. 전처리 및 정제  (Pre-Processing)
     1. 필요없는 데이터 제거
     
     ![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/952ac4f1-6a84-48e6-b295-bd93a07311c5)
