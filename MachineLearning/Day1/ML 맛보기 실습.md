@@ -35,7 +35,9 @@
     breast_cancer.target_names
     ```
     
-3. 학습용/검증용 데이터 분리
+3. ⭐ 학습용/검증용 데이터 분리
+   1. 테스트 데이터를 아예 몰라야 한다.
+   2. 데이터를 전체 학습을 하면 모델이 학습을 잘했는지 못했는지 판단을 할 수가 없다.
     
     ```python
     import numpy as np
@@ -66,7 +68,7 @@
     train.shape, test.shape
     ```
     
-4. 데이터 점검 및 탐색
+5. 데이터 점검 및 탐색
     1. EDA (Exploratory Data Analysis) : 탐색적 데이터 분석
     2. test 데이터는 탐색하지 않음
     
@@ -82,7 +84,10 @@
     
     ![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/952ac4f1-6a84-48e6-b295-bd93a07311c5)
     ![7](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/c95676ec-dcc6-4bf7-9c95-47b93911c1a1)
-    
+
+    - x_train의 row와 y_train의 row 수가 같아야 한다.
+    - x_train의 col과 x_test의 col 수가 같아야 한다.
+
     ```python
     # drop : 로우를 삭제할 것인지, 컬럼을 삭제할 것인지
     # axis : 축 / 0 = 로우축, 1 = 컬럼축
