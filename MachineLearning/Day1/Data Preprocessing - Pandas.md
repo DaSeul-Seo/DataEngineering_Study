@@ -210,8 +210,10 @@ iris.tail()   # 데이터 하위 5개
     ```
     
 - iloc
-    - index location
+    - integer location
     - index에 해당되는 값만 가져온다.
+    - 컴퓨터가 읽기 좋은 방법인 숫자로 데이터가 있는 위치에 접근
+    - df.iloc[행 index, 열 index]
     
     ```python
     iris.iloc[4]
@@ -229,3 +231,7 @@ iris.tail()   # 데이터 하위 5개
     ```
     
 - loc
+  - location
+  - label, boolean array로 인덱싱
+  - 사람이 읽을 수 있는 라벨 값으로 특정 값들을 골라오는 방법
+  - df.loc[행 index 값, 열 index 값]
