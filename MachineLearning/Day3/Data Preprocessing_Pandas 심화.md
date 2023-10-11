@@ -64,10 +64,10 @@ result
 ### merge() → how=”left”
 
 - 어떤 방식으로 merge()를 할 것인가?
-    - 단순히 merge()를 하면 상당 수의 데이터가 날라지기 때문에
+    - 단순히 merge()를 하면 상당 수의 데이터가 달라지기 때문에
 - left를 주로 쓴다.
 - right의 데이터가 없더라도 left 값들은 살리겠다.
-- right의 데이터가 없으면 결측치로 처리
+- right의 데이터가 없으면 결측치로 처리된다.
 
 ```python
 result = pd.merge(left, right, how="left", on=["key1", "key2"])
@@ -94,7 +94,7 @@ result
 ### merge() → how=”outer”
 
 - left, right 다 살리겠다.
-- 가장 데이터가 많을 것이다. ⇒ 모든 데이터를 다 살리기 떄문에
+- 가장 데이터가 많을 것이다. ⇒ 모든 데이터를 다 살리기 때문에
 
 ```python
 result = pd.merge(left, right, how="outer", on=["key1", "key2"])
