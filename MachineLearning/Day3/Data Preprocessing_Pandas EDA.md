@@ -103,3 +103,16 @@
     - 딱 떨어지는 숫자라면 범주형 데이터
     - unique()
     - value_counts()
+    - 통계적 분석
+      - describe()
+    - normalize : 퍼센트로 변경
+    
+    ```python
+    df_object["embarked"].value_counts(normalize=True) # 범주별 비율
+    '''
+    S    0.724409
+    C    0.188976
+    Q    0.086614
+    Name: embarked, dtype: float64
+    '''
+    ```
