@@ -168,7 +168,7 @@
     - max : 최대값
 
 ### ⭐ map()
-
+- Series
 - 데이터의 value와 다른 데이터의 index가 동일할 때 치환
 - map은 하나의 컬럼(Series)만 적용 가능
 
@@ -232,7 +232,7 @@ df['sex'].map(lambda value: 1 if value == 'male' else 0)[:5]
 ```
 
 ### ⭐ apply()
-
+- Matrix
 - map과 다르게 2 ~ 3개의 데이터를 조작할 수 있다.
 - matrix 단위로 처리하고 싶을 경우 사용
 - axis의 default값은 0(column )이기에 생략 가능
