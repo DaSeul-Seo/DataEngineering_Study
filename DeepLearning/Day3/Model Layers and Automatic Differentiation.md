@@ -35,7 +35,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print('Using {} device'.format(device))
 ```
 
-1. Define the class
+2. Define the class
 - 모델 클래스 만들기
     - init(생성함수) 필요 ⇒ 다른 메소드(함수)를 실행하기 위해 필요한 변수 등을 미리 생성(선언)하는 역할
 
@@ -125,8 +125,49 @@ y_pred = pred_probab.argmax(1)
 print(f"Predicted class: {y_pred}")
 ```
 
-1. Weight and Bias
-2. Model layers
+3. Weight and Bias
+   1. wight와 Bias 확인
+
+	```python
+	# 왜 순서가 바뀐 것일까
+	# 행렬로 포현했을 때, (세로, 가로)이기에
+	print(f"1 Linear weights: {model.linear_relu_stack[0].weight.shape} \n") # (512, 28*28)
+	print('-'*50)
+	print(f"1 Linear weights: {model.linear_relu_stack[0].bias.shape} \n") # (512)
+	'''
+	1 Linear weights: torch.Size([512, 784]) 
+	--------------------------------------------------
+	1 Linear weights: torch.Size([512])
+	'''
+	```
+	
+	```python
+	print(f"2 Linear weights: {model.linear_relu_stack[2].weight.shape} \n") # (512, 512)
+	print('-'*50)
+	print(f"2 Linear weights: {model.linear_relu_stack[2].bias.shape} \n") # (512, 512)
+	'''
+	2 Linear weights: torch.Size([512, 512]) 
+	--------------------------------------------------
+	2 Linear weights: torch.Size([512])
+	'''
+	```
+	
+	```python
+	print(f"3 Linear weights: {model.linear_relu_stack[4].weight.shape} \n") # (10, 512)
+	print('-'*50)
+	print(f"3 Linear weights: {model.linear_relu_stack[4].bias.shape} \n") # (10)
+	'''
+	3 Linear weights: torch.Size([10, 512]) 
+	--------------------------------------------------
+	3 Linear weights: torch.Size([10])
+	'''
+	```
+	
+	```python
+	model.linear_relu_stack[4].weight
+	model.linear_relu_stack[4].bias
+	```
+4. Model layers
     1. nn.Flatten
         1. 선형회귀모델의 input share(1D)에 맞게 feature(2D)를 1D로 변경
         
@@ -191,7 +232,7 @@ print(f"Predicted class: {y_pred}")
         
         ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e68fc036-5ca3-4af8-802a-d673e285fe5b)
     
-3. Model parameters
+5. Model parameters
     
     ```python
     print("Model structure: ", model, "\n\n")
