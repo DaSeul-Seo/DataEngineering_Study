@@ -28,4 +28,58 @@
       - EDA 구역 배분
         
   </details>
+
+  <details>
+  <summary>2023년 11월 01일</summary>
+    
+  - Negative Samping 목표
+    
+  - Titanic과 동일시 하려고
+
+  ### 국민대 데이터
   
+  - apply-train
+  - resume
+  - recruitment
+  
+  ### Flow
+  
+  - Import
+  - 데이터 로드
+      - apply-train
+      - resume
+          - resume_education
+          - resume_language
+          - resume_certificate
+      - recruitment
+          - company
+      - submission
+  - EDA
+      - apply_train 기준으로 merge
+      - merge_total = merge_resume + merge_recruitment
+      - 새로운 구직자 f, 새로운 공고 f
+  - Negative sampling
+      - 데이터를 이진분류로 변경
+      - 지원한 공고 갯수, 지원하지 않은 공고 갯수 뽑기
+          - 실제값(지원한 공고) 만큼 거짓데이터(지원하지 않은 공고) 뽑는다
+      - train / test split
+          - df_shuffle
+              - idx, resume_seq, recruitment_seq, target(실제지원결과: 1/0)
+  - 학습
+      - Boosting : 이진분류(0/1)
+      - LightGBM 사용
+          - 인코딩 따로 할 필요 없고 속도가 빠름
+  - 예측
+      - 유저당 모든 공고에 대한 예측값을 구한다. ⇒ for
+  - output
+      - 유저당 상위 5개(지원한 공고 제외)를 뽑아서 제출
+  
+  ### 해야할 것
+  
+  - 코드 구현
+  - EDA를 통한 feature 생성
+  - Model LightGBA
+    -  최적의 하이퍼파라미터 찾기
+  - 7일까지는 되어야 한다.
+    
+  </detail>
