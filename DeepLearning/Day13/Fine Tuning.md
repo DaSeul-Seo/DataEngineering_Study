@@ -1,0 +1,2 @@
+- 우리만의 vocab와 tokenizer를 만들면 안된다.
+- 사전 학습 모델에서 정의한 vocab과 tokenizer를 사용
