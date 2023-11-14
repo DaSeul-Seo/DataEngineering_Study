@@ -1,0 +1,34 @@
+- 사전에 학습된 모델을 사용한다.
+- Fine Tunning : 추가 학습
+
+### Transfer Learning 종류
+
+- GPT (Generative Pre-Training) (NLG)
+    - 생성 사전학습 모델
+    - 채팅
+    - GPT-1
+        - Transformer block이 12개 쌓인 모델
+        - Decoder만 사용 (생성모델이니까)
+        - 감정 분석(Sentimental Analysis)
+            - <Start>, <Extract> 문장의 시작과 끝을 나타내는 토큰 추가하여 학습
+        - 가설 분석(Entailment Task)
+            - <Start>, <Delim>, <Extract> 토큰 추가해 학습
+            - <Delim>으로 앞 뒤 문장 구분
+        - Multiple Choice
+            - 가설 분석과 토큰은 동일
+            - input이 리스트
+            - 두 문장을 비교해 유사도를 측정하거나 여러 문장 중 하나 선택
+- BERT (NLU)
+    - Encoder에 강점
+    - Endocer를 여러개 쌓아서 사용
+    - embedding을 이용해 각 문장을 구분
+        - Token Embedding
+        - Segment Embedding
+        - Position Embedding
+    - PAD, UNK, CLS, SEP, MASK 스페셜 토큰 사용
+        - padding token: `[PAD]` (0)
+        - unknown token: `[UNK]` (100)
+        - classifier token: `[CLS]` (101)
+        - seperator token: `[SEP]` (102)
+        - mask token: `[MASK]` (103)
+    - 감정분석 강점
