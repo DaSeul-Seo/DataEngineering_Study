@@ -149,7 +149,7 @@ import matplotlib.pyplot as plt
     print(f"Label: {label}")
     ```
     
-1. ImageFolder를 이용한 Datadet 생성
+2. ImageFolder를 이용한 Datadet 생성
 - https://www.learnpytorch.io/04_pytorch_custom_datasets/
 - Get Data
     
@@ -300,7 +300,10 @@ import matplotlib.pyplot as plt
     '''
     ```
     
-1. ⭐ Dataset 클래스 생성
+3. ⭐ Dataset 클래스 생성
+- __init__() : 생성함수
+- __len__() : 전체 데이터 수
+- __getitem__() : 해당 index의 feature, target 리턴
 - Creating a helper function to get class names (class명 가져오는 함수 만들기)
     
     ```python
