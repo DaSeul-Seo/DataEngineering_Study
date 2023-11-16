@@ -1,7 +1,15 @@
-- 정형 데이터 (Structured Data)를 다룸
+- 정형 데이터 (Structured Data)
+    - 고정된 필드에 저장된 데이터
+    - RDBMS, 엑셀
+- 반정형 데이터 (Semi-Structured Data)
+    - 고정된 필드에 저장되어 있지는 않지만, 메타데이터나 스키마 등을 포함하는 데이터
+    - XML, HTML, JSON, 이메일
+- 비정형 데이터 (Unstructured Data)
+    - 고정된 필드에 저장되어 있지 않은 데이터
+    - 텍스트, 이미지, 동영상, 음성 데이터
 
 ### Database
-
+- 정형 데이터 (Structured Data)를 다룸
 - 데이터의 집합
     - 서로 성향이 비슷한 것들끼리의 모음
 
