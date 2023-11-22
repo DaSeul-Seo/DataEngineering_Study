@@ -14,7 +14,7 @@
     - 휴지심만 존재
 - undefined: 정의되어 있지 않음
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/188353c6-8827-422f-b076-843c784f38e5)
+![1](../img/img_dataclean1.png)
 
 
 ### 결측치가 왜 발생 하였나?
@@ -84,7 +84,7 @@ print(tmp_train['age_cut'].value_counts())
 print(tmp_train['age_qcut'].value_counts())
 ```
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/dbad7f50-2978-4ae4-91cb-1f250270564f)
+![2](../img/img_dataclean2.png)
 
 
 ### 결측치 처리 (일반적인 방법) : 제거, 치환, 모델처리
@@ -92,7 +92,7 @@ print(tmp_train['age_qcut'].value_counts())
 - 수치형
     - 50프로가 넘어가면 진지하게 고민
     
-    ![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/a28dd9b3-5c44-4442-abc7-1bc962aa21cd)
+    ![3](../img/img_dataclean3.png)
 
     
     - 제거
@@ -144,9 +144,9 @@ print(tmp_train['age_qcut'].value_counts())
         
         - 위에 그래프가 아래로 바뀐다.
         
-        ![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/6905689c-0b16-4bcd-bb22-b885ee867aef)
+        ![4](../img/img_dataclean4.png)
 
-        ![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/9dde1cc3-8ab3-4c03-b2fd-15b4ba8b7da7)
+        ![5](../img/img_dataclean5.png)
         
         - test에서도 결측치 채워 주어야함
             - train의 값을 가지고 채워야함.
@@ -158,7 +158,7 @@ print(tmp_train['age_qcut'].value_counts())
     X_tr['embarked'].value_counts(dropna=False)
     ```
     
-    ![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/d919e2f2-260f-42ec-b8ea-43b88d25b73e)
+    ![6](../img/img_dataclean6.png)
 
     
     - 가장 무난한 방법은 최빈값
@@ -255,7 +255,7 @@ df['fare'].kurt()
 sns.displot(df["fare"], color="b", label="Skewness : %.2f"%(df["fare"].skew()))
 ```
 
-![7](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/5fcba29c-3bb4-4687-807a-c32df0ae00f0)
+![7](../img/img_dataclean7.png)
 
 
 ### 비대칭 데이터 처리
@@ -268,7 +268,7 @@ sns.displot(df["fare"], color="b", label="Skewness : %.2f"%(df["fare"].skew()))
     sns.displot(df["fare"], color="b", label="Skewness : %.2f"%(df["fare"].skew()))
     ```
     
-    ![8](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/11f35dcc-8b58-4e97-baae-7607cb3e8def)
+    ![8](../img/img_dataclean8.png)
 
 
 ### 이상치(옵션)
@@ -282,7 +282,7 @@ sns.displot(df["fare"], color="b", label="Skewness : %.2f"%(df["fare"].skew()))
     sns.boxplot(y=df['age'], data=df)
     ```
     
-    ![9](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/c3b16b41-b403-4f40-bf4a-dfd42dcea4cc)
+    ![9](../img/img_dataclean9.png)
 
 
 ### 이상치 처리
@@ -332,4 +332,4 @@ outlier.head()
 # 그래프화
 sns.boxplot(y=df['age'], data=df)
 ```
-![10](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/40af7192-a939-4011-810e-c8f9c71102a7)
+![10](../img/img_dataclean10.png)

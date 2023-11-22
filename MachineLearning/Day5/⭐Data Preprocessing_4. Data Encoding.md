@@ -23,7 +23,7 @@
     5. 장점
         1. 다른 방법들은 One hot Encoding처럼 정확하게 못해주기 때문
     
-    ![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/9ec58ed4-6ce0-4e26-903c-68c0cac7cc5a)
+    ![1](../img/img_dataencoding1.png)
 
     
     ```python
@@ -51,20 +51,20 @@
     3. 단점
         1. 컴퓨터는 순서형으로 인지하지 못한다.
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/9ec11a25-a9bb-42fa-bd74-bf309e7c34f5)
+![2](../img/img_dataencoding2.png)
 
 ### Ordinal Encoding
 
 1. Label Encoding
     1. 라벨을 적자
     
-![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/f6adcdb0-7b4d-452a-98a4-accc04b50cc9)
+![3](../img/img_dataencoding3.png)
 
 2. Target Encoding
     1. Target을 고려한 Encoding
     2. Mean Encoding + Label Encoding
     
-    ![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/4d25e4b7-6962-4d5a-a8c2-b17c964afa65)
+    ![4](../img/img_dataencoding4.png)
     
 3. Ordinal Encoding
     1. Label Encoding과 비슷

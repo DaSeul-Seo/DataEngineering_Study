@@ -39,9 +39,9 @@ pred.shape, y_valid.shape
     2. 분자가 더 크면 0에 가까워진다.
     3. 분모가 더 크면 1에 가까워진다.
         
-        ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/844ed2cd-18ed-462d-a516-3b8712740395)
+        ![1](../img/img_reg1.png)
 
-        ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c8cc8a8f-d3c7-445b-9073-e5a9871c93ee)
+        ![2](../img/img_reg2.png)
         
         ```python
         from sklearn.metrics import r2_score
@@ -55,7 +55,7 @@ pred.shape, y_valid.shape
     1. Error : 실제값 - 예측값
     2. Error를 제곱한다.
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e0b8af46-6655-4a22-95c7-aefb4389c535)
+    ![3](../img/img_reg3.png)
 
     ```python
     from sklearn.metrics import mean_squared_error
@@ -70,7 +70,7 @@ pred.shape, y_valid.shape
     2. Error는 음수가 나오면 안되기에 MSE에 루트를 씌운다.
     3. 실제 오차의 평균 값을 알 수 있다.
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/89dc5f41-fdf8-4fbe-a705-e52159b73a58)
+    ![4](../img/img_reg4.png)
 
     ```python
     import numpy as np
@@ -83,7 +83,7 @@ pred.shape, y_valid.shape
     2. 0이거나 특이한 값이 나오는 경우가 존재하기에 +1을 해준 것.
         1. +1 정도는 결과에 크게 영향이 없기에 사용한 것이다.
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/75522fd9-0932-4d3a-b3fb-b41adea162d3)
+    ![5](../img/img_reg5.png)
 
     ```python
     def rmsle(y, pred, convertExp=False):
@@ -107,7 +107,7 @@ pred.shape, y_valid.shape
     1. Error를 절대값 해서 평균을 낸다.
     2. 기준이 애매하다.
     
-    ![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5a90e44e-0b3b-418e-9647-260c80d9e6e2)
+    ![6](../img/img_reg6.png)
 
     ```python
     from sklearn.metrics import mean_absolute_error
@@ -122,7 +122,7 @@ pred.shape, y_valid.shape
     3. 그 결과를 합한다.
     4. MAE가 결과 기준이 애매하기에 Percentage로 표시한다.
     
-    ![7](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f3104cfe-a0c5-4de0-9228-275c369fc22e)
+    ![7](../img/img_reg7.png)
 
     ```python
     from sklearn.metrics import mean_absolute_percentage_error
@@ -133,7 +133,7 @@ pred.shape, y_valid.shape
 7. SMAPE (Symmetric Mean Absolute Percentage Error)
     1. MAPE에서 분모가 0이면 무한이기 때문에 결과 값을 보장을 못한다.
     
-    ![8](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/640ffee4-fc4e-413f-a25d-c00ca6e646ed)
+    ![8](../img/img_reg8.png)
 
     ```python
     def smape(true,pred):

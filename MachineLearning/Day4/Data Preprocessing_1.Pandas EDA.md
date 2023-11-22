@@ -7,7 +7,7 @@
 pd.crosstab(df_object["sex"],df_object["survived"],margins = True)
 ```
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/2f1c1509-3630-491f-acc6-41a77f3f5656)
+![1](../img/img_eda7.png)
 
 
 ```python
@@ -15,7 +15,7 @@ pd.crosstab(df_object["sex"],df_object["survived"],margins = True)
 pd.crosstab(df_object["sex"],df_object["survived"],margins=True, normalize= "all")
 ```
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/c051c60f-6177-4f87-a405-b59b5c7dc160)
+![2](../img/img_eda8.png)
 
 
 ```python
@@ -23,7 +23,7 @@ pd.crosstab(df_object["sex"],df_object["survived"],margins=True, normalize= "all
 pd.crosstab(df_object["sex"],df_object["survived"],margins=True, normalize= "index")
 ```
 
-![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/50ea7397-14d6-4cb3-9d1d-52c7a50fa829)
+![3](../img/img_eda9.png)
 
 
 ```python
@@ -31,7 +31,7 @@ pd.crosstab(df_object["sex"],df_object["survived"],margins=True, normalize= "ind
 pd.crosstab(df_object["sex"],df_object["survived"],margins=True, normalize= "columns")
 ```
 
-![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/d68da03b-3cb2-4dd7-b5ab-2f415a824aed)
+![4](../img/img_eda10.png)
 
 
 ### pivot_table 분석
@@ -48,4 +48,4 @@ df_pivot
 # 1등석, 2등석, 3등석 모두에서 여자가 남자보다 생존여부가 높게 나타나고 있다.
 ```
 
-![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/518e4052-b4d6-486d-8b9d-25e8a1152294)
+![5](../img/img_eda11.png)

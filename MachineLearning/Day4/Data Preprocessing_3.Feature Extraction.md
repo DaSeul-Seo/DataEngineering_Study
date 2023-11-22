@@ -86,7 +86,7 @@ for i in tqdm(np.random.rand(10000000)):
     i = i**2
 ```
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/804d8b50-2b9e-4f18-948f-86df1aefdc68)
+![1](../img/img_feature1.png)
 
 - with pandas
 
@@ -101,4 +101,4 @@ def do_apply(x):
     return x
 tmp = df.progress_apply(do_apply,axis = 1)
 ```
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/01bb0d90-36d4-4b42-9306-794fa87f6707)
+![2](../img/img_feature2.png)
