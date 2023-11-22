@@ -29,7 +29,7 @@ result = pd.merge(left, right, on="key")
 result
 ```
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/2dcfb751-9c68-4a9c-b3b0-9cccf61b9ae4)
+![1](../img/img_pandas6.png)
 
 
 - 기준이 2개일 수도 있다.
@@ -59,7 +59,7 @@ result = pd.merge(left, right, on=["key1", "key2"])
 result
 ```
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/cf102be4-52af-4bd3-b5dc-cdf07cea181a)
+![2](../img/img_pandas7.png)
 
 ### merge() → how=”left”
 
@@ -74,7 +74,7 @@ result = pd.merge(left, right, how="left", on=["key1", "key2"])
 result
 ```
 
-![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/0f911dc0-8e69-43a7-a3ed-f05218517d77)
+![3](../img/img_pandas8.png)
 
 
 ### merge() → how=”right”
@@ -88,7 +88,7 @@ result = pd.merge(left, right, how="right", on=["key1", "key2"])
 result
 ```
 
-![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/66b021f1-b48b-4fcb-a976-2156ab26c992)
+![4](../img/img_pandas9.png)
 
 
 ### merge() → how=”outer”
@@ -101,7 +101,7 @@ result = pd.merge(left, right, how="outer", on=["key1", "key2"])
 result
 ```
 
-![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/1c2152f3-095e-4334-bd82-22a29f831374)
+![5](../img/img_pandas10.png)
 
 
 ### merge() → how=”inner”
@@ -114,7 +114,7 @@ result = pd.merge(left, right, how="inner", on=["key1", "key2"])
 result
 ```
 
-![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/2c46fc9d-a28a-4958-bc16-922422c111f0)
+![6](../img/img_pandas11.png)
 
 
 ### merge() 문제
@@ -255,7 +255,7 @@ df_male.shape
     result
     ```
     
-    ![7](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/ec4263eb-68b9-4179-a36d-9ed40575e17a)
+    ![7](../img/img_pandas12.png)
 
     
 2. DataFrame & DataFrame
@@ -279,7 +279,7 @@ df_male.shape
     result
     ```
     
-    ![8](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/b5bb93f6-d563-421a-b68c-e7ad9e94df96)
+    ![8](../img/img_pandas13.png)
 
     
     - index 재정의
@@ -291,7 +291,7 @@ df_male.shape
     result
     ```
     
-    ![9](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/b11a8eb0-8e9c-48c3-a83c-adeaec24cb18)
+    ![9](../img/img_pandas14.png)
 
     ```python
     result = pd.concat([df1, df4], ignore_index=True, sort=False)
@@ -300,7 +300,7 @@ df_male.shape
     
     ⭐ 현업에서 많이 쓴다.
     
-    ![10](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/ce07f8fe-6c27-468f-ba62-f383f7057f58)
+    ![10](../img/img_pandas15.png)
 
 
 ### concat() 문제

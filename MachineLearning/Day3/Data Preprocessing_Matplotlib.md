@@ -32,7 +32,7 @@ plt.show() # 실제 화면에 표시한다
     plt.show() # 그려진 그래프를 보여주는 로직
     ```
     
-    ![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/e5d4f528-e556-4bc2-8aa4-b02f52079874)
+    ![1](../img/img_mlt1.png)
 
 ### 다중 그래프
 
@@ -48,7 +48,7 @@ plt.plot(np.arange(2,7))
 plt.show()
 ```
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/254dfed0-eb20-4ee9-9d40-2109e471b282)
+![2](../img/img_mlt2.png)
 
 ### subplots
 
@@ -72,7 +72,7 @@ plt.show()
     plt.show()
     ```
     
-    ![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/31aad8a4-af48-48e2-b7ff-eca0614a8e94)
+    ![3](../img/img_mlt3.png)
 
     
 - 방법 2
@@ -122,7 +122,7 @@ ax[1].set_title("log")
 plt.show()
 ```
 
-![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/b6c9f88e-8a8f-44e8-b2b6-2edbf7052db6)
+![4](../img/img_ml41.png)
 
 ### 축 제목
 
@@ -164,7 +164,7 @@ ax.tick_params(axis="x", labelrotation=45)
 plt.show()
 ```
 
-![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/0631d345-4191-407e-97c6-7c5d403470fc)
+![5](../img/img_mlt5.png)
 
 ### 눈금 지정
 
@@ -181,7 +181,7 @@ ax.set_yticks(range(50))
 plt.show()
 ```
 
-![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/022b39cc-c8d7-4aec-9b6a-8084ed59863a)
+![6](../img/img_mlt6.png)
 
 ### 그래프 스타일
 
@@ -200,7 +200,7 @@ plt.show()
     plt.show()
     ```
     
-    ![7](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/a20743bb-1d71-4b79-88dc-43db45870870)
+    ![7](../img/img_mlt7.png)
 
 - 선 스타일
     
@@ -217,7 +217,7 @@ plt.show()
     plt.show()
     ```
     
-    ![8](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/6b9ccd48-ff72-4927-80b3-8fec3b7a4672)
+    ![8](../img/img_mlt8.png)
 
 - Color(색)
     
@@ -234,7 +234,7 @@ plt.show()
     plt.show()
     ```
     
-    ![9](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/bb1d9a8e-9f6f-4ed0-a83a-51ebd7e186f6)
+    ![9](../img/img_mlt9.png)
 
 ### 범례표시
 
@@ -253,7 +253,7 @@ ax.legend(["X","X^2"],loc=[0.5,0.8])
 plt.show()
 ```
 
-![10](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/95615f97-d0aa-43d7-8509-1dbbe9abedda)
+![10](../img/img_mlt10.png)
 
 ```python
 x = np.arange(0, 4, 0.5)
@@ -265,7 +265,7 @@ plt.plot(x, -2*x + 3, 'r:')
 plt.show()
 ```
 
-![11](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/b888b166-6ccd-465c-8de4-a2ead5326433)
+![11](../img/img_mlt11.png)
 
 ### 수평선 그리기
 
@@ -280,7 +280,7 @@ plt.axhline(4.0, 0.1, 0.9, color='lightgray', linestyle='--', linewidth=2)
 plt.show()
 ```
 
-![12](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/222370ac-c6e2-4455-923e-a63e6b28d656)
+![12](../img/img_mlt12.png)
 
 
 ### 수직선 그리기
@@ -288,7 +288,7 @@ plt.show()
 - axvline(x, ymin, ymax)
 - vlines(x, ymin, ymax)
 
-![13](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/67392276-bf6f-48ff-ac8d-3e6b1f1022eb)
+![13](../img/img_mlt13.png)
 
 
 ### 막대 그래프(Bar graph)
@@ -313,7 +313,7 @@ plt.yticks(x, years)
 plt.show()
 ```
 
-![14](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/04533615-1c5d-4e45-8e37-4dd607e2e498)
+![14](../img/img_mlt14.png)
 
 
 ### ⭐ 산점도 그리기
@@ -331,7 +331,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-![15](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/023d2b2d-8aa8-4699-b9eb-8ad6990d7c56)
+![15](../img/img_mlt15.png)
 
 
 ### 히스토그램(Histogram)
@@ -350,7 +350,7 @@ plt.hist(weight)
 plt.show()
 ```
 
-![16](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/fc039714-9021-4cf3-a323-4365be673b69)
+![16](../img/img_mlt16.png)
 
 
 ### 에러바(오차막대)표시
@@ -367,7 +367,7 @@ plt.errorbar(x, y, yerr=yerr)
 plt.show()
 ```
 
-![17](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/c8522f4f-b4d1-4ee6-a8ff-8594e29684cc)
+![17](../img/img_mlt17.png)
 
 
 ### 파이차트
@@ -383,7 +383,7 @@ plt.pie(ratio, labels=labels, autopct='%.1f%%')
 plt.show()
 ```
 
-![18](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/e2ec4600-5991-4d71-aa81-1bd2d5da9071)
+![18](../img/img_mlt18.png)
 
 
 ### 히트맵(Heatmap)
@@ -400,7 +400,7 @@ plt.matshow(arr)
 plt.show()
 ```
 
-![19](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/dcf8410a-8f6e-4566-9452-fb49d1643ccd)
+![19](../img/img_mlt19.png)
 
 
 ### ⭐ 박스 플롯 그리기
@@ -413,7 +413,7 @@ plt.show()
     - 제 3사분위 수(Q3)
     - 최대값
 
-![20](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/d322980b-2785-4593-800d-350ee857790a)
+![20](../img/img_mlt20.png)
 
 
 ```python
@@ -439,4 +439,4 @@ ax.set_ylabel('Value')
 plt.show()
 ```
 
-![21](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/041854da-fda2-4f4c-a100-d1302c3aab74)
+![21](../img/img_mlt21.png)

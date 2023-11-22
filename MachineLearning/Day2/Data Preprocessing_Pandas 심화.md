@@ -173,7 +173,7 @@
 - map은 하나의 컬럼(Series)만 적용 가능
 
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/fc6c2802-653e-459d-8c42-70d42b449139)
+![1](../img/img_pandas1.png)
 
 ```python
 x = pd.Series({'one':1,'two':2,'three':3})
@@ -296,7 +296,7 @@ df1['is_gender'] = df1.apply(lambda x: CheckGender(x['sex'], x['who']), axis=1)
     pd.pivot_table(df_groupby, index='sex', columns='pclass', values='age', aggfunc='mean')
     ```
     
-    ![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/260fc47a-b7af-42db-99d7-6a4201e14fd9)
+    ![2](../img/img_pandas2.png)
 
     
     - female 이면서 pclass가 1인 사람들의 평균나이는 34세 이다.
@@ -325,7 +325,7 @@ df1['is_gender'] = df1.apply(lambda x: CheckGender(x['sex'], x['who']), axis=1)
         grouped.agg(['min', 'max'])
         ```
         
-        ![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/acdf0b40-e310-48d1-bfb8-fe6d78365e46)
+        ![3](../img/img_pandas3.png)
 
         
         - dictionary로 사용 가능
@@ -340,7 +340,7 @@ df1['is_gender'] = df1.apply(lambda x: CheckGender(x['sex'], x['who']), axis=1)
         grouped.agg(agg_dict)
         ```
         
-        ![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/9ad5680d-f295-48e8-9c6c-e29dec0ef846)
+        ![4](../img/img_pandas4.png)
 
         
         - 함수 사용 가능
@@ -352,7 +352,7 @@ df1['is_gender'] = df1.apply(lambda x: CheckGender(x['sex'], x['who']), axis=1)
         grouped.agg(min_max)
         ```
         
-        ![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/2ae9f364-c84d-48ef-b088-124d60eddd44)
+        ![5](../img/img_pandas5.png)
 
         
 4. transform()

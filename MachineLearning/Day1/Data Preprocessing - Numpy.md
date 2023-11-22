@@ -5,7 +5,7 @@
 - 계산을 빨리 하게 해준다
 - 엑셀이라고 생각하면 된다.
 
-![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/d12dbe73-c4c1-4224-93d1-f2f1afeb3821)
+![6](../img/img_numpy1.png)
 
 
 - Scalar : 데이터 1개

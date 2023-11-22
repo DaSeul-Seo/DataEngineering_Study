@@ -17,7 +17,7 @@
 
 ### 데이터 유형
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/036d1c08-5cba-46f6-ad40-42411c45aa94)
+![1](../img/img_eda1.png)
 
 1. 수치형 데이터
     1. 연속형 데이터
@@ -48,7 +48,7 @@
     3. 분산, 표준편차의 폭이 작아야 상관관계가 있다. (1에 가깝다)
         1. 분산, 표준편차가 크면 폭이 크다
     
-    ![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/cc3889f4-981e-4bc9-839e-dd1b9272840e)
+    ![2](../img/img_eda2.png)
 
 2. 왜도 (Skewness)
     1. 0.5 ~ 0.5: 상당히 대칭적
@@ -62,7 +62,7 @@
     6. Negative Skew (음수)
         1. Mean < Median < Mode
     
-    ![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/353294e7-9dde-4082-8256-6ac329f1adbe)
+    ![3](../img/img_eda3.png)
 
 3. 첨도
     1. 뾰족하게 삐져나온 것
@@ -70,12 +70,12 @@
     3. kurt 값이 0보다 작을 경우에는 정규분포보다 더 완만하고 납작한 분포를 가진다.
     4. kurt 값이 0보다 크면 정규분포보다 더 뽀족한 분포를 가진다.
     
-    ![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/f3f22d20-c3c0-4d73-b9c4-fa6a7e8bc74c)
+    ![4](../img/img_eda4.png)
 
 4. ⭐ 이상치
     1. 이상치로 인해 모델 학습에 영향을 미친다.
 
-![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/a2ae58cc-a224-47d1-a997-a02fa9fd5636)
+![5](../img/img_eda5.png)
 
 ### 예제
 
@@ -93,7 +93,7 @@
             - ex) survived기준으로 pclass(-0.34)와 상관이 있다.
             - ex) pclass와 fare는 상관이 있다.
         
-        ![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/daed1941-6ebb-45a8-8c71-0c072646e301)
+        ![6](../img/img_eda6.png)
 
 - 모델 학습 할 때
     - 컴퓨터가 알아볼 수 있게 변형해서 사용한다.

@@ -39,7 +39,7 @@
             - D2Coding ligature
         - Edit in settings.json에서 값 변경
             
-            ![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/54678eb7-166a-4baf-9a59-2bd358090a47)
+            ![1](../img/img_pySettings1.png)
 
             
 

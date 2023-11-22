@@ -10,7 +10,7 @@
 - Categorical plots
     - 범주형 변수의 집계나 볌주형 변수와 수치형 변수간의 관계를 볼 때
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/c59dedd3-f0de-4f60-afac-8103035e039f)
+![1](../img/img_sns1.png)
 
 
 ### Relational plots (상관관계)
@@ -25,7 +25,7 @@
 sns.relplot(data=tips, x="total_bill", y="tip", hue="smoker")
 ```
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/65f42440-299a-4181-8e0a-08d6f176f1e7)
+![2](../img/img_sns2.png)
 
 
 ### lineplot
@@ -39,7 +39,7 @@ sns.relplot(
 )
 ```
 
-![3](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/0f4d34d0-5537-40bb-ae51-11541959cf97)
+![3](../img/img_sns3.png)
 
 
 ### 여러 관계 그래프
@@ -53,7 +53,7 @@ sns.relplot(
 )
 ```
 
-![4](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/6a364057-14fc-49fa-933a-45220fbaa61d)
+![4](../img/img_sns4.png)
 
 
 ### **Distribution plots**
@@ -68,14 +68,14 @@ sns.relplot(
 sns.displot(penguins, x="flipper_length_mm", bins=20)
 ```
 
-![5](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/63cb1842-ba45-4c4f-b984-faf3aa70db0a)
+![5](../img/img_sns5.png)
 
 
 ```python
 sns.displot(penguins, x="flipper_length_mm", hue="species", multiple="dodge")
 ```
 
-![6](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/28c1f059-cffa-4dd7-8229-56fcb5521b39)
+![6](../img/img_sns6.png)
 
 
 - kdeplot
@@ -85,7 +85,7 @@ sns.displot(penguins, x="flipper_length_mm", hue="species", multiple="dodge")
 sns.displot(penguins, x="flipper_length_mm", hue="species", kind="kde", fill=True)
 ```
 
-![7](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/7b8ecdd8-7897-4799-90eb-bb1544ee7d86)
+![7](../img/img_sns7.png)
 
 
 - rugplot
@@ -94,7 +94,7 @@ sns.displot(penguins, x="flipper_length_mm", hue="species", kind="kde", fill=Tru
 sns.displot(penguins, x="bill_length_mm", y="bill_depth_mm")
 ```
 
-![8](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/6ac06ff4-9101-4344-a3aa-9fe44bc13b6c)
+![8](../img/img_sns8.png)
 
 
 ### **Categorical plots**
@@ -110,7 +110,7 @@ tips = sns.load_dataset("tips")
 sns.catplot(data=tips, x="day", y="total_bill")
 ```
 
-![9](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/9c56a9dd-5f70-4d69-b994-bb72f75e8a2a)
+![9](../img/img_sns9.png)
 
 
 ```python
@@ -118,7 +118,7 @@ sns.catplot(data=tips, x="day", y="total_bill")
 sns.catplot(data=tips, x="day", y="total_bill", kind="swarm")
 ```
 
-![10](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/e9d7eb00-17eb-4aa0-b353-505974b4b7e4)
+![10](../img/img_sns10.png)
 
 
 ### 분포 비교
@@ -132,7 +132,7 @@ sns.catplot(data=tips, x="day", y="total_bill", kind="swarm")
 sns.catplot(data=tips, x="day", y="total_bill", hue="smoker", kind="box")
 ```
 
-![11](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/2890924b-918d-4aec-9855-d3905b7a0125)
+![11](../img/img_sns11.png)
 
 
 ### 바이올린 플롯
@@ -146,4 +146,4 @@ sns.catplot(
 )
 ```
 
-![12](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/599c1b02-3c1d-46d1-a65b-f70273902a18)
+![12](../img/img_sns12.png)

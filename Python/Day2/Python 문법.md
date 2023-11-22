@@ -1,8 +1,8 @@
 - 어떤 가상환경에 있는지 아는 방법
 
-![1](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/5da10f2e-15ea-4110-b66c-76674f0b9ba5)
+![1](../img/img_pySettings2.png)
 
-![2](https://github.com/DaSeul-Seo/Playdata_Study/assets/67898022/8249e5a9-ea95-48b0-a8e4-c77373ef532f)
+![2](../img/img_pySettings3.png)
 
 
 ### Python Package Upgrade
