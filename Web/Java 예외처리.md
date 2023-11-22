@@ -2,7 +2,11 @@
 
 - try-catch
     
+<<<<<<< HEAD:Java/Java 예외처리.md
     ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5537d54c-3a4a-4b12-b30e-6a44b8bf704e)
+=======
+    ![1](./img/img_exception1.png)
+>>>>>>> javaB:Web/Java 예외처리.md
 
     ```java
     public class Exception {
@@ -26,7 +30,11 @@
     
 - try-catch-finally
     
+<<<<<<< HEAD:Java/Java 예외처리.md
     ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/02523cd5-4bf0-47aa-bda3-4be54627e907)
+=======
+    ![2](./img/img_exception2.png)
+>>>>>>> javaB:Web/Java 예외처리.md
 
     ```java
     public class Sample {

@@ -219,7 +219,11 @@
 - 캡슐화 (Encapsulation)
     - 접근자
         
+<<<<<<< HEAD:Java/Java OOP.md
         ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4b6d8f31-f479-4401-acaa-5f97233d6bb9)
+=======
+        ![3](./img/img_oop1.png)
+>>>>>>> javaB:Web/Java OOP.md
 
     - private는 getter / setter로 접근가능
         
