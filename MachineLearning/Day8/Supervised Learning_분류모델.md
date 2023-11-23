@@ -5,14 +5,14 @@
     2. 그래프에서 기준에서 위에는 1, 아래는 0
     3. 하이퍼파리미터 C에 따라 결과값이 달라진다.
     
-    ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/1dc04df6-b54a-4638-840f-9f90a9b14656)
+    ![1](../img/img_sl_cls1.png)
 
 2. 선형 서포트벡터 머신(Linear SVM)
     1. 이진분류
     2. 선을 그어 위에는 1, 아래는 1
     3. 하이퍼파리미터 C에 따라 결과값이 달라진다.
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/a7bfc372-a403-44b8-9d48-87af9859c7f6)
+    ![2](../img/img_sl_cls2.png)
 
 ### ⭐ 의사결정나무 (Decision Tree)
 
@@ -34,7 +34,7 @@
 - min samples split: 해당 노드가 가지고 있는 최소한의 샘플의 개수를 나타낸다.
 - min sample leaf: 또 다른 노드를 만들 수 있는 최소한의 샘플 수 조건을 뜻한다.
 
-![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/1ecde5a7-c3e5-4992-aa96-7c1f130562bd)
+![3](../img/img_sl_cls3.png)
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
@@ -78,7 +78,7 @@ plt.show()
 - 나를 기준으로 가까운 데이터로 학습한다.
     - 하나의 데이터와 다른 데이터가 얼마나 가깝나?
 
-![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/a91bf5fc-5920-4356-9968-164eb32e3a2b)
+![4](../img/img_sl_cls4.png)
 
 - 가장 가까운 이웃 1개를 가지고 학습한다.
 
@@ -88,7 +88,7 @@ plt.figure(figsize=(10,8))
 mglearn.plots.plot_knn_classification(n_neighbors=1)
 ```
 
-![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c8268529-22ef-4a6a-b00a-1f1856e4b23e)
+![5](../img/img_sl_cls5.png)
 
 - 가장 가까운 이웃 3개를 가지고 학습한다.
 
@@ -98,7 +98,7 @@ plt.figure(figsize=(10,8))
 mglearn.plots.plot_knn_classification(n_neighbors=3)
 ```
 
-![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/cbca80a4-b183-4f6a-93df-a69cbd3a12cf)
+![6](../img/img_sl_cls6.png)
 
 ```python
 from sklearn.neighbors import KNeighborsClassifier

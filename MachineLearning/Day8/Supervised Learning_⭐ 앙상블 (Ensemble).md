@@ -7,13 +7,13 @@
 - 데이터를 복원추출을 통해 Random하게 데이터를 재정의 (Random 추출)
 - 각자 서로 다른 데이터 셋을 가지고 학습.
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/da760480-28a9-4418-851b-61c60bba6ee1)
+![1](../img/img_ensemble1.png)
 
 1. Random Forest
     1. Decision Tree를 여러개 사용
     2. n_estimators : Decision Tree 몇개를 사용할 것인지
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/bb437b65-c739-4a76-96a8-dc20bdd1511f)
+    ![2](../img/img_ensemble2.png)
 
 ### ⭐ Boosting
 
@@ -27,7 +27,7 @@
 - 약한 모델로 N번을 학습하자.
 - 모델이 알아서 노이즈를 제거한다.
 
-![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/bc8309b9-d518-4842-bf28-047e8b509916)
+![3](../img/img_ensemble3.png)
 
 1. Gradient Boost (GBM)
     1. 전통적인 Boosting
@@ -110,7 +110,7 @@
     plt.show()
     ```
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/a7fd57b8-5f42-4816-9cb8-24a7f410c6e8)
+    ![4](../img/img_ensemble4.png)
 
 3. ⭐ Light GBM
     1. https://lightgbm.readthedocs.io/en/latest/index.html
@@ -125,7 +125,7 @@
         3. max_depth: 낮추기
         4. learning_rate 낮추기 & n_estimators 높이기
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/2ae44f38-1570-4674-8e77-acb2026789dc)
+    ![5](../img/img_ensemble5.png)
 
     ```python
     from lightgbm import LGBMClassifier, plot_importance
@@ -147,7 +147,7 @@
     3. 범주형 데이터가 많을 경우 사용.
         1. 인코딩도 알아서 다 해준다.
     
-    ![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4a02cf37-3cea-47ab-9f13-5f9e4091a2ab)
+    ![6](../img/img_ensemble6.png)
     
     ```python
     !pip install catboost
@@ -176,14 +176,14 @@
     - Voting은 모델이 유한(동일 모델 사용 불가하니까)하지만 Boosting은 기본이 1000개이기에 이길 수 없다.
     - Voting은 모든 모델을 다 알아야 하지만 Boosting은 하나만 파면 된다.
 
-![7](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5d184f57-1335-4799-9910-e6c343a096d5)
+![7](../img/img_ensemble7.png)
 
 - Hard Voting
     - 모델들의 예측 결과를 다수결로 최종 결과 결정
 - Soft Voting
     - 모델들의 예측 결과 확률 값으로 평균하여 최종 결과 결정
 
-![8](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/2bd9ae00-885b-494c-919f-2a538c75854c)
+![8](../img/img_ensemble8.png)
 
 ```python
 from sklearn.ensemble import VotingClassifier
@@ -219,7 +219,7 @@ print(f'훈련용 평가지표: {vot.score(X_tr, y_tr)} / 테스트용 평가지
 - 모델들의 예측 결과들을 확률로 DataFrame을 만든다.
 - 만든 DataFrame으로 최종 결과를 낸다.
 
-![9](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/81c469cc-437a-4e0a-b229-2e5e7ea63174)
+![9](../img/img_ensemble9.png)
 
 ```python
 from sklearn.ensemble import StackingClassifier

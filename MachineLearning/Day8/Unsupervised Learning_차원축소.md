@@ -5,7 +5,7 @@
 - 학습을 위해 차원이 증가하면서 학습데이터 수가 차원의 수보다 적어져 성능이 저하되는 현상
 - One Hot Encoding 때 많이 일어난다.
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e02c24f4-5925-4759-96bf-84d782715109)
+![1](../img/img_dim1.png)
 
 - 1차원은 데이터가 밀집되어 있다.
 - 2차원은 1차원보다 흩어져 있다.
@@ -19,7 +19,7 @@
     1. n_components: 주성분의 수 ⇒ 몇 개의 차원으로 줄여줄까?
     2. 데이터를 기준으로 수평, 수직으로 재정의 한다.
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/72a73820-7fb5-40d1-b184-29e756a602ab)
+    ![2](../img/img_dim2.png)
 
     ```python
     from sklearn.decomposition import PCA
@@ -46,7 +46,7 @@
     2. 하나의 행렬을 3개로 분해한다.
     3. Feature 데이터를 새로운 Feature DF로 쪼갤 수 있다.
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/75546fa1-d344-47ea-8388-253b490e6973)
+    ![3](../img/img_dim3.png)
 
     ```python
     from sklearn.decomposition import TruncatedSVD
@@ -73,7 +73,7 @@
     4. 원래데이터 = 가중치 행렬 X 특성행렬
         1. 가중치 행렬을 사용한다.
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/547228df-f551-4bf9-9b4d-ca7133b5d990)
+    ![4](../img/img_dim4.png)
     
     ```python
     from sklearn.decomposition import NMF

@@ -10,7 +10,7 @@
     5. 다시 가까운 데이터를 묶는다.
     6. 이러한 작업을 결과가 바뀌지 않을 때까지 반복.
     
-    ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/416b9a63-e392-4c67-b304-dedcbe60358f)
+    ![1](../img/img_cluster1.png)
     
     ```python
     
@@ -21,11 +21,11 @@
         - 기준을 중심으로 그룹핑을 하면 기본적으로 데이터는 동그래야 한다.
             - 직선일 경우에는 학습이 잘 안된다.
             
-            ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c1d86ecb-48f5-4682-a620-b3fafec3444d)
+            ![2](../img/img_cluster2.png)
 
 2. Overview of Clustering methods
     1. https://scikit-learn.org/stable/modules/clustering.html
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ea6c03d5-8a1c-431a-9ba2-0c7340fe95bb)
+    ![3](../img/img_cluster3.png)
 
     - 데이터의 분포도와 class의 갯수를 정확하게 안다면 상기 이미지에서 괜찮은 것 골라서 쓰면 된다.
