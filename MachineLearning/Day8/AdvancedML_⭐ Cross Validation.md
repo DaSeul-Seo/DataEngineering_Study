@@ -3,7 +3,7 @@
 - 평가에 대한 기법
 - train에서 train과 test로 나누어 모델 검증을 하는데 그렇게도면 test에 과적합하게 되므로, 실제 데이터를 가져와도 예측을 수행하면 맞지 않는 경우 발생. ⇒ 교차검증하자
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/370250b2-69e2-4c30-951a-0d798fde14d8)
+![1](../img/img_cv1.png)
 
 - 1번은 test로 하고 나머지는 train으로 하자. ⇒ 그것을 N번하자
 - 오버피팅을 감소
@@ -12,12 +12,12 @@
 1. ⭐ k-fold cross vaildation
     1. 회귀모델일 때 사용
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e7c3f9bb-311d-486d-8edc-46519fc464b0)
+    ![2](../img/img_cv2.png)
 
 2. Stratified k-fold cross validation
     1. 분류모델일 때 사용
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/596921ce-3e12-4f2c-8099-305c823eb376)
+    ![3](../img/img_cv3.png)
 
 ```python
 import numpy as np 

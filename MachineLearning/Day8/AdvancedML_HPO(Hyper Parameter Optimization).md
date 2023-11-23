@@ -6,7 +6,7 @@
 2. Hyper Parameter
     1. 사람이 임의로 setting
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4093eedc-1ce3-47fa-90d4-02ec93d7500a)
+![1](../img/img_hpo1.png)
 
 ### HPO 탐색 방법
 
@@ -53,7 +53,7 @@
     gs_results_df.plot(subplots=True,figsize=(10, 10))
     ```
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f13f8a0f-518f-4d17-887f-88be9bfcd075)
+    ![2](../img/img_hpo2.png)
 
 2. Random Search
     1. 많이 사용
@@ -87,12 +87,12 @@
     rs_results_df.plot(subplots=True,figsize=(10, 10))
     ```
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4e8d18ff-42fc-434f-9308-300d5eddd881)
+    ![3](../img/img_hpo3.png)
 
     - Grid Search VS Random Search
         - 낮은 값이 좋다. (loss 값)
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/9725ea45-2450-4c1a-a6fd-6af78ab4e5af)
+    ![4](../img/img_hpo4.png)
 
 3. Bayesian Search 알고리즘
     1. Grid나 Random은 최고의 점수를 찾을 수 있다는 보장이 없다.
@@ -160,4 +160,4 @@
     optuna.visualization.plot_param_importances(study)
     ```
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/26fe78dc-9c54-44c2-bfbd-644286ea1c20)
+    ![5](../img/img_hpo5.png)

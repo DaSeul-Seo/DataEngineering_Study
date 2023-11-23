@@ -1,6 +1,6 @@
 - 분류모델일 경우 해당된다.
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/108f35b2-c35a-4b0b-993e-bd8ede3ba6b5)
+![1](../img/img_balance1.png)
 
 ### 해결책
 
