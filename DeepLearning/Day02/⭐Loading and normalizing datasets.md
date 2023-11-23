@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 1. torch에서 제공하는 Dataset 사용
 - FashionMNIST (https://github.com/mpalaourg/FashionMNIST-PyTorch)
     
-    ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/cc9c9f4b-ef2f-41bd-83fb-ea1e248044bd)
+    ![1](../img/img_dataset1.png)
     
     ```python
     training_data = datasets.FashionMNIST( # torchvision에서 제공

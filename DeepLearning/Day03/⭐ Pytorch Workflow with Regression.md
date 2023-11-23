@@ -1,6 +1,6 @@
 ### Pytorch Workflow
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/a5a9e7ed-524a-4164-b149-f647808d1837)
+![1](../img/img_torch_reg1.png)
 
 1. row 데이터를 tensor로 바꾸기
 2. 데이터 로드
@@ -21,7 +21,7 @@ torch.__version__
 
 ### 1. 데이터 준비
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f6f9344e-15cc-4e6b-a112-a2cfd5be9a85)
+![2](../img/img_torch_reg2.png)
 
 1. 데이터 생성
     1. $y = weight * X + bias$
@@ -44,7 +44,7 @@ torch.__version__
     
 2. 데이터 분리
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4f7bee33-d43f-4c5b-9e5b-eb3cbffaf886)
+    ![3](../img/img_torch_reg3.png)
 
     ```python
     # Create train/test split
@@ -85,13 +85,13 @@ torch.__version__
     plot_predictions();
     ```
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5e17dd10-868c-40d7-ae12-89663a47bd9b)
+    ![4](../img/img_torch_reg4.png)
 
 ### 2. 모델링 정의
 
 1. 모델 정의
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4322fe5f-065b-4279-91c3-d5215d86ecf0)
+    ![5](../img/img_torch_reg5.png)
 
     ```python
     # Create a Linear Regression model class
@@ -148,7 +148,7 @@ torch.__version__
     plot_predictions(predictions=y_preds)
     ```
     
-    ![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e891a367-aa7b-4af4-b3b7-a328291aae8c)
+    ![6](../img/img_torch_reg6.png)
 
     - 실제값과 예측값의 차이를 줄이는 방향으로 모델을 학습
 
@@ -192,13 +192,13 @@ torch.__version__
         4. Perform Backpropagation the loss : Optimization (역전파)
         5. Update the optimizer (gradient descent) : Optimization (역전파)
         
-        ![7](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/b953b699-147b-4c1c-8a0c-9b0d444d42fc)
+        ![7](../img/img_torch_reg7.png)
 
     2. Testing Loop
         1. Foward pass
         2. Calculate the loss
         
-        ![8](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/8abc3fbc-32f3-494a-9f6b-694ba700c2df)
+        ![8](../img/img_torch_reg8.png)
 
     3. 학습 실행 (with 코드)
         
@@ -298,13 +298,13 @@ y_preds[:5]
 plot_predictions(predictions=y_preds)
 ```
 
-![9](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/7e66ffe2-fd74-4d2e-a13f-8064a097a31c)
+![9](../img/img_torch_reg9.png)
 
 ### 5. 모델 저장
 
 1. save model
     
-    ![10](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3e556b76-ed3d-4328-b9b8-71493b3941fe)
+    ![10](../img/img_torch_reg10.png)
 
     ```python
     from pathlib import Path

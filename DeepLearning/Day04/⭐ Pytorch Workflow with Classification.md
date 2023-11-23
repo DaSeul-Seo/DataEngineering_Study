@@ -7,7 +7,7 @@
 3. Multi label Classification
     1. 다수의 class, 다수 정답
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/43603ec0-17ca-4722-91f5-76cb5e45cb52)
+![1](../img/img_torch_cls1.png)
 
 - Loss function
     - Regression Tasks
@@ -64,7 +64,7 @@ plt.scatter(x = X[:, 0],
             cmap = plt.cm.RdYlBu)
 ```
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/91d672e5-9aba-46a9-90d1-2e180c9913ef)
+![2](../img/img_torch_cls2.png)
 
 - 데이터를 tensor로 변환하고 데이터 분할
 
@@ -131,7 +131,7 @@ X_train, X_test, y_train, y_test =
         - https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.02491&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
     3. 손실함수 및 역전화 정의
         
-        ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/12ef49c9-c368-4b33-acc9-5e04a4a49d87)
+        ![3](../img/img_torch_cls3.png)
 
         ```python
         # 이진분류에서 사용하는 Loss Function과 Optimizer
@@ -255,7 +255,7 @@ X_train, X_test, y_train, y_test =
     # 선형 모델을 가지고 비선형 모델을 분류하려 하기 때문에 안된 것.
     ```
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3c249823-dbcb-48ae-bb57-2af3ade8efb9)
+    ![4](../img/img_torch_cls4.png)
 
     
 4. 모델 개선
@@ -266,7 +266,7 @@ X_train, X_test, y_train, y_test =
                 - Add more hidden units
             - epoch 사이즈를 늘려보자
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e4a68dde-15da-4ca5-8e01-d58df67b3199)
+    ![5](../img/img_torch_cls5.png)
 
     
 5. 비선형
@@ -297,7 +297,7 @@ X_train, X_test, y_train, y_test =
           # return self.layer_3(self.relu(self.layer_2(self.relu(self.layer_1(x)))))
     ```
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/983a6d32-6218-4ead-9d87-6ffc302cca32/422103fb-c6af-4c8a-bce2-9218f21ba050/Untitled.png)
+    ![6](../img/img_torch_cls6.png)
     
 
 ### Multi-class classification

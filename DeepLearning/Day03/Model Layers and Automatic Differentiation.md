@@ -1,4 +1,4 @@
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e3b45848-27b0-4a05-b3d5-7b2e83be68d7)
+![1](../img/img_layer1.png)
 
 - 앞에 있는 layer의 input 조작 불가
     - Feature 갯수, output shape 등등
@@ -171,7 +171,7 @@ print(f"Predicted class: {y_pred}")
     1. nn.Flatten
         1. 선형회귀모델의 input share(1D)에 맞게 feature(2D)를 1D로 변경
         
-        ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/df8c25f4-c463-4ff2-a535-881de2032793)
+        ![2](../img/img_layer2.png)
 
         ```python
         # flatten 생성
@@ -230,7 +230,7 @@ print(f"Predicted class: {y_pred}")
         pred_probab.shape
         ```
         
-        ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e68fc036-5ca3-4af8-802a-d673e285fe5b)
+        ![3](../img/img_layer3.png)
     
 5. Model parameters
     

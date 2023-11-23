@@ -5,7 +5,7 @@
 - tensor는 객체이다. (인스턴스)
 - 기본적으로 얕은복사
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c6a3bf5c-3c24-4044-aac6-2c7640e31997)
+![1](../img/img_tensor1.png)
 
 - torch.tensor : list → tensor 형변환
 
@@ -148,7 +148,7 @@ Device tensor is stored on: cpu
 '''
 ```
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/070fd236-e6f2-4991-96ae-bc613ab4c840)
+![2](../img/img_tensor2.png)
 
 ### Tensor 연산
 
@@ -254,7 +254,7 @@ tensor([[[1, 5],
 
 - broadcasting
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/7567a2fa-34dd-4497-9d6b-3d9c599c2f44)
+    ![3](../img/img_tensor3.png)
 
 - torch.mm (행렬 곱)
     - 다른 모양의 tensor의 곱 (2D tensor X 2D tensor)
