@@ -7,7 +7,7 @@
     - 자연어 생성
 - 언어의 대한 이해(NLU)를 통해 언어에 대한 피드백(NLG)
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/fafe1af1-3565-4f07-8ba7-ee41048cffad)
+![1](../img/img_nlp1.png)
 
 - 이메일 필터링(Email filtering)
 - 언어 번역(Language translation)
@@ -27,7 +27,7 @@
     2. 의미가 동일한 것은 하나로 남겨두고 다르면 남긴다.
     3. 관사, 대명사 등 의미를 부여할 수 없는 글자 제거
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3b28f6a1-3818-4bb1-a16a-934fc80472b3)
+    ![2](../img/img_nlp2.png)
 
 2. Stemming (추출)
     1. 부사, 형용사, 추임새, 접사어를 제거하고 핵심적인 단어 추출
@@ -60,7 +60,7 @@
         1. 토끼, 안녕
         2. 단어들은 무한하다.
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3cc96221-ccff-4491-b657-7729d1cda289)
+    ![3](../img/img_nlp3.png)
 
     - 형태소 분석
         - 명사, 조동사, 동사 등을 구분할 수 있다.
@@ -99,9 +99,9 @@
         3. Word2vec Encoding
         4. Word Enbedding with neural network
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/36cdb4a5-fee9-4771-8a66-b0ba66b25841)
+    ![4](../img/img_nlp4.png)
 
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/0e3fa26e-1351-442e-8e3e-ed1e414c3e2f)
+    ![5](../img/img_nlp5.png)
 
 6. Padding
     1. 문장들은 길이가 각기 다 다르다.

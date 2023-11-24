@@ -105,7 +105,7 @@ rotated_image = cv2.warpAffine(src=img_RGB, M=rotate_matrix, dsize=(width, heigh
 
 - 특정수치를 기준으로 작으면 0 (검정), 크면 255 (흰색)
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5a4c7404-01c3-4b3d-93bc-c3b1fc1f2fbb)
+![1](../img/img_ip_cv1.png)
 
 - ADAPTIVE_THRESH_MEAN_C
     - 평균 기준
@@ -167,7 +167,7 @@ img_blur = cv2.medianBlur(img_RGB, val)
 - Dilation : 이미지 팽창
     - cv2.dilate(img, kernel, iterations=1)
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/917ec287-0675-4ed0-b671-4bdfa08c5eb0)
+![2](../img/img_ip_cv2.png)
 
 ```python
 image_gray = cv2.imread({이미지경로}, cv2.IMREAD_GRAYSCALE)
@@ -213,7 +213,7 @@ image_gray_blur = cv2.GaussianBlur(image_gray, (val, val), 0)
 image_edge1 = cv2.Canny(image_gray_blur, 50, 300)
 ```
 
-![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ab0bb8a7-cba1-4051-932c-f66120895b59)
+![3](../img/img_ip_cv3.png)
 
 <aside>
 💡 Reference

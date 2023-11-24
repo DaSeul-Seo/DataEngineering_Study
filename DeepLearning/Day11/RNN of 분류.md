@@ -10,7 +10,7 @@
 
 - 현재 시간의 상태가 이전 시간의 상태와 관련이 있다.
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/1cd597b4-5b58-4247-9438-4b3a40581662)
+![1](../img/img_rnn1.png)
 
 $x_t = f(x_{t-1})$
 
@@ -38,7 +38,7 @@ $x_t = f(x_{t-1})$
 - Vanilla RNN : 제일 기본적인 RNN
 - 학습이 될 때마다 feature 값을 받자
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3f1847b7-af02-434a-92be-c064a114e7f1)
+![2](../img/img_rnn2.png)
 
 $x_t = f(x_{t-1}, u_t)$
 
@@ -65,7 +65,7 @@ $x_t = f(x_{t-1}, u_t)$
 > 
 - 최종모델
 
-![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5be628a8-ecbc-4d97-97d4-ee09aa48dfe4)
+![3](../img/img_rnn3.png)
 
 $x_t = f(x_{t-1}, u_t)$
 
@@ -99,7 +99,7 @@ $y_t = h(x_t)$
 
 ### RNN (Recurrent Neural Network)
 
-![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/9c9093bd-a492-4432-bc43-02ebfbd7abaa)
+![4](../img/img_rnn4.png)
 
 - 선형회귀모델은 결과를 새로운 모델에 학습한다.
 - RNN은 자기 자신을 학습한다. (결과를 계속 자신에게 input 한다.)
@@ -124,11 +124,11 @@ $y_t = h(x_t)$
 
 ### RNN 구조 종류
 
-![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/58533fa1-efea-41aa-a212-935db2187b68)
+![5](../img/img_rnn5.png)
 
 ### RNN 연산
 
-![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e721ed6a-93a8-4bb0-ab32-becef3eeb0fe)
+![6](../img/img_rnn6.png)
 
 - 은닉층(초록)
     - $h_t = tanh(W_xx_t + W_hh_{t-1} + b)$

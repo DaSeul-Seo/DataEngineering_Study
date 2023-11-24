@@ -13,7 +13,7 @@
 
 ### Transformer 전체
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/9bca13f7-b09b-4647-912f-0430642f0428)
+![1](../img/img_transformer1.png)
 
 ### Transformer 구조
 
@@ -21,12 +21,12 @@
     1. Input : Embedding + Positional Encoding (Matrix)
     2. Output : 
     
-    ![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/cb49e0bd-dd2e-4a1c-aeb5-e8b96f4a7d80)
+    ![2](../img/img_transformer2.png)
 
 2. Word Embedding (Encoder, Decoder)
     1. One-Hot Encoding을 Embedding
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/54d71131-56ef-4550-b3ab-4d88a45b2c71)
+    ![3](../img/img_transformer3.png)
 
 3. Positional Encoding (Encoder, Decoder)
     1. RNN 제거
@@ -34,14 +34,14 @@
     3. 병렬화 가능해짐
     4. sin(짝수), cos(홀수) 사용해 위치 정보 매긴다.
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f99a4298-7133-4296-8dae-ef4fe02dd826)
+    ![4](../img/img_transformer4.png)
 
 4. Self-Attention (시간 단축) (Encoder, Decoder)
     1. 일반적인 Attention은 Keys가 Encoder에, Query는 Decoder에 있다.
     2. Transformer는 Encoder끼리, Decoder끼리 Attention을 한다. (Self-Attention)
     3. 자기와 자기 자신의 유사도를 계산
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/99d79e92-5dfa-4fb0-b62c-f7023e3c54f5)
+    ![5](../img/img_transformer5.png)
 
 5. QKV
     1. Query (I)
@@ -59,7 +59,7 @@
     1. 각 Query를 병렬로 각각 처리한다.
     2. 속도가 빠르다
     
-    ![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/2a6cbbe1-c9a8-4fad-aec5-ab3075b720f8)
+    ![6](../img/img_transformer6.png)
 
 7. Masking Multi-Head Self Attention (Decoding)
     1. 특정 데이터를 가린다.
@@ -70,14 +70,14 @@
     3. Seq2Seq에서는 Masking을 안하는 이유?
         1.  RNN 특성상 순차적으로 학습하기 때문에 해당 순서에는 다음에 오는 단어를 모른다. ⇒ target 데이터를 모른다.
     
-    ![7](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ccf7aa65-a299-40e3-9d3a-c6c239a0d49c)
+    ![7](../img/img_transformer7.png)
 
 8. Feed-Forward (선형회귀모델) (Encoder, Decoder)
     1. Fully-Connected Layer
     2. ReLU
     3. Fully-Connected Layer
     
-    ![8](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/9aba988b-8197-4983-ab8c-4940737ea38a)
+    ![8](../img/img_transformer8.png)
 
 9. Add & Normalization (Encoder, Decoder)
     1. ResNet 기법 사용
@@ -85,18 +85,18 @@
     3. Multi-Head Attention 결과값과 합친다.
     4. Feed Forward 결과값과 합친다.
     
-    ![9](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/eefeede5-0236-423d-85d7-424bf141461c)
+    ![9](../img/img_transformer9.png)
 
 10. Output Softmax
     - Encoder의 Keys, Value의 값이 Decoder에 들어간다.
     - 1, 2 Attention은 자기 자신에 대한 유사도 계산
     - 3 Attention은 Encoder의 output(Keys, Values), Decoder 의 input에 대한 유사도 계산
     
-    ![10](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ea74ed86-d5f0-4c06-ba09-7a0125a1c0d3)
+    ![10](../img/img_transformer10.png)
 
 ### Transformer Code
 
-![11](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/facce55a-3118-47a4-9845-c229d083bbe9)
+![11](../img/img_transformer11.png)
 
 - nn.Transformer
 - Parameter

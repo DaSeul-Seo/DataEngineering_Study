@@ -6,7 +6,7 @@
 
 ### LSTM (Long Short Term Memory)
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c0c916a2-2b1b-4bf5-aced-20f74ef8705d)
+![1](../img/img_lstm1.png)
 
 - input 3개
     - hidden_state : 새로 들어온 x와 과거 데이터 간의 관계(매번 hidden_state가 새로 생성된다. - 재사용 X)

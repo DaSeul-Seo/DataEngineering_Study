@@ -9,13 +9,13 @@
     - TinyVGG : 작은 버전의 VGG
     - 최대 19개
     
-    ![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/aba2e6a1-4ea1-4b6d-8230-1f54697c6707)
+    ![1](../img/img_vgg1.png)
 
 ### Loss 그래프를 그리는 이유
 
 - under fitting, over fitting 확인하기 위해
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/af037eae-f57b-47c0-9dc8-bf8a28d46c83)
+![2](../img/img_vgg2.png)
 
 - over fitting 해결법
     - 데이터를 더 모으기

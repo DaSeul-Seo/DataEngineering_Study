@@ -11,11 +11,11 @@
     
 - BasicBlock
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/449c152f-5f47-4d68-bab8-23b46270d7e2)
+![1](../img/img_resnet1.png)
 
 - ResNet은 BasicBlock이 여러개 반복
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/d61178fb-c217-493b-8fcd-6e83d676f18c)
+![2](../img/img_resnet2.png)
 
 ### ResNet Code
 

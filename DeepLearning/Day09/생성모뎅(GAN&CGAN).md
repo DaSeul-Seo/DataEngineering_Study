@@ -10,7 +10,7 @@
     - 내가 가진 이미지를 개선하는 용도
     - 비지도학습 - feature 차원축소
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/166bcab2-2407-4940-a281-038868fbe7e4)
+![1](../img/img_gan1.png)
 
 - 2개의 모델을 생성해서 각각 학습
 - Generator가 아무 의미 없는 것을 가지고 가짜 데이터를 만든다.
@@ -22,7 +22,7 @@
 
 ---
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/0be9deeb-d13b-427d-a94a-e60304689c2c)
+![2](../img/img_gan2.png)
 
 - Generator
     - input 으로 진짜 랜덤 binary 데이터
@@ -31,7 +31,7 @@
     - 만든 가짜 데이터가 진짜 데이터로 판별이 얼마나 되었는지
     - 작은 데이터가 큰 데이터로 나온다. (Decoder)
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ab5a4d9f-db41-421a-857e-30a1b2872382)
+    ![3](../img/img_gan3.png)
 
 - Discriminator
     - 진짜 데이터와 Generator의 output을 학습해서 구별해주는 모델을 만든다.
@@ -40,7 +40,7 @@
     - max값(D값)이 최대가 되도록 학습
     - 큰 데이터가 작은 데이터로 나온다. (Encoder)
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/e8c54431-805e-4260-81ad-8c38dcd92d01)
+    ![4](../img/img_gan4.png)
 
 - Discriminator의 InputData는 Generator의 OutputData가 들어간다.
 
@@ -49,9 +49,9 @@
 - Multi Classifier
 - GAN에서 label(target) 까지 학습하여 정답을 찾는다.
 
-![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4ca7070c-954e-4593-901c-242a22b5ee52)
+![5](../img/img_gan5.png)
 
-![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/24934b5e-717c-4643-9477-fdaa5684f72f)
+![6](../img/img_gan6.png)
 
 - Generator : real label / fake data
 - Discriminator : real label / real data

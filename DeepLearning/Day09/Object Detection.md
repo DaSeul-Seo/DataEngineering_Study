@@ -3,7 +3,7 @@
 - 여러 물체 분류 (Classification)
 - 물체가 어디 있는지 박스 (Bounding Box)를 통해 위치 정보 나타냄 (Localization)
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3ca5b621-fda5-4067-bff9-e876ad1a19a3)
+![1](../img/img_od1.png)
 
 - 1-stage Detector
     - Localization과 Classification 동시에 실행
@@ -14,7 +14,7 @@
     - 비교적 느리지만 정확도가 높음
     - R-CNN, Fast R-CNN, Faster R-CNN
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/04c089e1-951d-4c29-ae12-991ebc18fe2b)
+![2](../img/img_od2.png)
 
 1. R-CNN (2-stage Detector)
     1. selective search를 통해 후보영역(Region Proposal)을 생성
@@ -23,14 +23,14 @@
     4. 강제로 크기를 맞추기 위한 wrapping으로 이미지 변형, 손실이 존재
     5. 후보영역만큼 CNN을 돌려야 하기 때문에 큰 저장공간을 요구하고 느리다는 단점 존재
     
-    ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f83600ff-ba22-45a4-9a5f-552c8c4f6ecd)
+    ![3](../img/img_od3.png)
 
 2. Fast R-CNN
     1. 이미지 전체에 CNN을 적용하여 생성된 Feature map에서 후보영역을 생성
     2. 후보영역을 RoI Pooling을 통해 고정 사이즈의 Feature Vector로 추출
     3. Feature Vector에 FC layer를 거쳐 Softmax를 통해 분류, Refressor를 통해 Bounding-box를 조정
     
-    ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/66c7c850-2dab-46aa-bf28-984b8b8988bd)
+    ![4](../img/img_od4.png)
 
 3. Faster R-CNN
     1. selective search부분을 딥러닝으로 바꾼 RPN (Region Proposal Network)을 사용
@@ -39,7 +39,7 @@
     4. RPN에서 얻은 후보영역으로 IoU순으로 정렬 → NMS (Non-Maximum Suppression) 알고리즘을 통해 최종 후보영역 선택
     5. 선택된 후보영역의 크기를 맞추기 위해 RoI Pooling을 거친 이후, Fast R-CNN과 동일하게 진행
     
-    ![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3e1ebbee-1db9-4f4a-816b-5afe6acffcf3)
+    ![5](../img/img_od5.png)
     
 
 ---

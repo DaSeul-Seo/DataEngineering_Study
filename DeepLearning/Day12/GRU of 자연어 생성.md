@@ -2,7 +2,7 @@
 
 ### GRU (Gated Recurrent Unit)
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/44da95a2-7c1b-4cd0-adb4-17b975157ae7)
+![1](../img/img_gru1.png)
 
 - LSTM과 비슷한데 구조가 단순하다.
 - LSTM에서의 cell이 없다.

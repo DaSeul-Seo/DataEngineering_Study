@@ -16,11 +16,11 @@
 - 모든 기업이 많은 데이터를 가지고 있지 않기 때문에
     - 많은 데이터를 가지고 있는 기업이 Pre Trained model 을 제공한다.
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/4824333c-4cca-4676-b680-ef60e69d268a)
+![1](../img/img_ft1.png)
 
 ### Transfer Learning / Fine tunning 고르는 기준
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ff9c9e6a-f20e-41d3-87a2-d45c2aed2357)
+![2](../img/img_ft2.png)
 
 - 박스 : Model
     - 긴 박스 : Convolusion + Pooling : features 특징 생성
@@ -709,7 +709,7 @@
 - 딥러닝 경량화
 - 자동차, 드론, 스마트폰 등등
 
-![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/50d527ce-2520-4732-97d9-da83902004ef)
+![3](../img/img_ft3.png)
 
 <aside>
 💡 Reference
