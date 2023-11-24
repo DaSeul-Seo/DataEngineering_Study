@@ -48,7 +48,7 @@
     - MongoDB, Hbase, DynamoDB
     - Column-Family, Graph, Document, Key-Value
 
-![1](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/f515cecf-5498-4596-92c3-446ec0342f39)
+![1](./img/img_sql1.png)
 
 ### 데이터 모델링 & ERD
 
@@ -68,7 +68,7 @@
     2. 제약조건 정의
     3. 객체의 상관관계 정의
 
-![2](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/c639d001-0b42-46c2-a6a7-aebb0da03406)
+![2](./img/img_sql2.png)
 
 ### ERD (Entity-Relation Diagram)
 
@@ -90,27 +90,27 @@
         - 선으로 표시
         - NULL 미존재
         
-        ![3](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/d9484b48-f26c-4b1c-90d8-3abe5e5bdbe1)
+        ![3](./img/img_sql3.png)
 
     - 비식별관계
         - 부모 자식 관계에서 자식이 부모의 PK를 FK로 참조해서 일반 속성으로 사용
         - 점선으로 표시
         - NULL 존재
         
-        ![4](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/8b10eaca-8516-4e44-b8ca-c56faf670d3a)
+        ![4](./img/img_sql4.png)
 
 
-![5](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/6e162410-1662-47d4-b4e0-fa746ca89a33)
+![5](./img/img_sql5.png)
 
-![6](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/5e6b1530-d2d7-40e3-ac22-957e5cae005a)
+![6](./img/img_sql6.png)
 
-![7](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/a707a219-5cf5-4ee1-9e13-860ab2675bb5)
+![7](./img/img_sql7.png)
 
-![8](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/66dc7ee5-1b8b-4629-b5f3-1f4d187bc505)
+![8](./img/img_sql8.png)
 
-![9](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ee5910fc-cf30-4ccf-8232-be20c4f05c4e)
+![9](./img/img_sql9.png)
 
-![10](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/cb76be66-92aa-4736-91c8-385c336a98e6)
+![10](./img/img_sql10.png)
 
 
 ### ⭐ 데이터베이스 정규화
@@ -122,21 +122,21 @@
 1. 제1정규형
     1. 하나의 컬럼에 하나의 값만 기입
     
-    ![11](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/6ac20542-7ee9-4ed5-9857-2b8b576a2d27)
+    ![11](./img/img_sql11.png)
 
 2. 제2정규형
     1. 제1정규형을 거친 테이블 나누기
     2. 중복데이터 제거됨
     
-    ![12](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/3392ae28-c3d1-453c-a86c-3708ec6baf6c)
+    ![12](./img/img_sql12.png)
 
 3. 제3정규형
     1. 제2정규형을 거친 테이블 나누기
     2. 여러 정보가 포함되어 있는 것을 나누기
     
-    ![13](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/2d2ff365-6163-4302-b797-c93b29071653)
+    ![13](./img/img_sql13.png)
 
-    ![14](https://github.com/DaSeul-Seo/DataEngineering_Study/assets/67898022/ed29b923-7d5f-4cfd-92aa-c3b172c7abbd)
+    ![14](./img/img_sql14.png)
 
 4. BCNF정규화 (선택)
 
