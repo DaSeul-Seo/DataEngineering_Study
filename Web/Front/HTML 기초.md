@@ -6,17 +6,17 @@
 - Element 들의 집합
     - HTML을 구성하는 구성요소
     
-    ![1](./img/img_html1.png)
+    ![1](../img/img_html1.png)
     
 - 속성 (Attribute)
     - 변수 설정
     
-    ![2](./img/img_html2.png)
+    ![2](../img/img_html2.png)
     
 
 ### HTML 기본 구조
 
-![3](./img/img_html3.png)
+![3](../img/img_html3.png)
 
 ```html
 <!-- ! 탭을 이용하면 자동으로 만들어짐.  -->

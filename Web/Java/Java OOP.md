@@ -219,7 +219,7 @@
 - 캡슐화 (Encapsulation)
     - 접근자
         
-        ![1](./img/img_oop1.png)
+        ![1](../img/img_oop1.png)
         
     - private는 getter / setter로 접근가능
         

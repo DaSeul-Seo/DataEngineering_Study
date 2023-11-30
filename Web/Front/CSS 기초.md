@@ -1,6 +1,6 @@
 ### CSS (**Casading Style Sheet)**
 
-![1](./img/img_css1.png)
+![1](../img/img_css1.png)
 
 - Selector : Element를 뜻함
 - id와 class를 많이 사용
