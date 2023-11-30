@@ -2,7 +2,7 @@
 
 - try-catch
     
-    ![1](../img/img_exception1.png)
+    ![1](./img/img_exception1.png)
     
     ```java
     public class Exception {
@@ -26,7 +26,7 @@
     
 - try-catch-finally
     
-    ![2](../img/img_exception2.png)
+    ![2](./img/img_exception2.png)
     
     ```java
     public class Sample {

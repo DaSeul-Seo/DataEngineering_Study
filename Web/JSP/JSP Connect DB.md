@@ -4,7 +4,7 @@
     - WEB-INF/lib에 있는 MySQL 사용
     - JSP는 webapp 안에 있는 파일만 인식
 
-![1](../img/img_jspdb1.png)
+![1](./img/img_jspdb1.png)
 
 ### Code
 

@@ -4,7 +4,7 @@
 
 ### JSP 파일 구조
 
-![1](../img/img_jsp1.png)
+![1](./img/img_jsp1.png)
 
 - webapp : HTML, CSS 작성하는 곳
     - META-INF
@@ -15,7 +15,7 @@
 - JSP file
     - html 파일
 
-![2](../img/img_jsp2.png)
+![2](./img/img_jsp2.png)
 
 ```html
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -69,7 +69,7 @@
 
 ### JSP Life Cycle
 
-![3](../img/img_jsp3.png)
+![3](./img/img_jsp3.png)
 
 - 요청
     - Browser가 Server에 JSP에 대한 요청 정보 전달
