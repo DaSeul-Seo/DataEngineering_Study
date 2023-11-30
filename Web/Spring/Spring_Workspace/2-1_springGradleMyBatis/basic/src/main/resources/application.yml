@@ -1,0 +1,23 @@
+# Sping Boot 설정
+spring:
+    # Spring Boot Log
+    output:
+        ansi:
+            enabled: always
+
+    # Database(MySQL) 설정
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+        username: urstory
+        password: u1234
+
+# MyBatis 설정
+mybatis:
+  # default Package location - resultType의 Alias를 지정합니다. (결과 타입 폴더명)
+  type-aliases-package: com.example.basic.model.entity
+  # mapper location - 바라 볼 xml 파일을 지정합니다. (classpath : resources 경로)
+  mapper-locations: classpath:mapper/**/*.xml
+  # column name to camel case - 반환 받는 컬럼명을 CamelCase로 받는 설정을 합니다.
+  configuration:
+    map-underscore-to-camel-case: true

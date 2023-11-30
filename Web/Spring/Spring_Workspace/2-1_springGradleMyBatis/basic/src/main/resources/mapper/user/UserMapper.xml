@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace의 최종 파일은 xml과 동일한 이름으로 작성하는 것을 추천 -->
+<mapper namespace="com.example.basic.model.repository.UserMapper">
+    <select id="selectUserAll" resultType="UserEntity">
+        SELECT * FROM users WHERE 1=1;
+    </select>
+
+    <select id="selectUserFilter" resultType="UserEntity">
+        SELECT
+            *
+        FROM users
+        WHERE 1=1
+        <if test='userAge > 20'>
+            And user_age > #{userAge}
+        </if>
+        ;
+    </select>
+</mapper>
