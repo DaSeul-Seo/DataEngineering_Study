@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace의 최종 파일은 xml과 동일한 이름으로 작성하는 것을 추천 -->
+<mapper namespace="com.mysite.blog.model.repository.IBoardMapper">
+    <select id="selectBoardAll" resultType="BoardEntity">
+        SELECT
+            *
+        FROM board
+        WHERE 1=1
+        ;
+    </select>
+
+    <select id="selectBoard" resultType="BoardEntity" parameterType="BoardEntity">
+        SELECT
+            *
+        FROM board
+        WHERE 1=1
+        <if test='boardTitle != null and boardTitle != ""'>
+            AND board_title Like concat('%', #{boardTitle}, '%')
+        </if>
+        <if test='boardContent != null and boardContent != ""'>
+            AND board_content Like concat('%', #{boardContent}, '%')
+        </if>
+        <if test='boardCreateDt != null and boardCreateDt != ""'>
+            AND board_create_dt >= #{boardCreateDt}
+        </if>
+        ;
+    </select>
+
+    <insert id="insertBoard" parameterType="BoardEntity">
+        INSERT INTO board(board_title, board_content)
+        VALUES (#{boardTitle}, #{boardContent});
+    </insert>
+
+    <update id="updateBoard" parameterType="BoardEntity">
+        UPDATE board
+        <set>
+            <if test='BoardTitle != null and BoardTitle != ""'>
+                board_title = #{boardTitle}
+            </if>
+            <if test='BoardContent > 0 and BoardContent != null'>
+                board_content = #{boardContent}
+            </if>
+            board_modify_dt = #{boardModifyDt}
+        </set>
+        WHERE 1=1
+            AND board_id = #{boardId}
+        ;
+    </update>
+
+    <delete id="deleteBoard" parameterType="BoardEntity">
+        DELETE FROM board
+        WHERE 1=1
+            AND board_id = #{boardId}
+        ;
+    </delete>
+</mapper>

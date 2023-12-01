@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace의 최종 파일은 xml과 동일한 이름으로 작성하는 것을 추천 -->
+<mapper namespace="com.mysite.blog.model.repository.IUserMapper">
+    <select id="selectUserAll" resultType="UserEntity">
+        SELECT
+            *
+        FROM users
+        WHERE 1=1
+        ;
+    </select>
+
+    <select id="selectUser" resultType="UserEntity" parameterType="UserEntity">
+        SELECT
+            *
+        FROM users
+        WHERE 1=1
+        <if test='userName != null and userName != ""'>
+            AND user_name Like concat('%', #{userName}, '%')
+        </if>
+        <if test='userEmail != null and userEmail != ""'>
+            AND user_email Like concat('%', #{userEmail}, '%')
+        </if>
+        <if test='userAgeYear != 0 and userAgeYear != null'>
+            AND user_age_year = #{userAgeYear}
+        </if>
+        ;
+    </select>
+
+    <insert id="insertUser" parameterType="UserEntity">
+        INSERT INTO users(user_name, user_age_year, user_age_month, user_age_day, user_email)
+        VALUES (#{userName}, #{userAgeYear}, #{userAgeMonth}, #{userAgeDay}, #{userEmail});
+    </insert>
+
+    <update id="updateUser" parameterType="UserEntity">
+        UPDATE users
+        <set>
+            <if test='userName != null and userName != ""'>
+                user_name = #{userName}
+            </if>
+            <if test='userAgeYear != 0 and userAgeYear != null'>
+                user_age_year = #{userAgeYear}
+            </if>
+            <if test='userAgeMonth != 0 and userAgeMonth != null'>
+                user_age_month = #{userAgeMonth}
+            </if>
+            <if test='userAgeDay != 0 and userAgeDay != null'>
+                user_age_day = #{userAgeDay}
+            </if>
+            <if test='userEmail != null and userEmail != ""'>
+                user_email = #{userEmail}
+            </if>
+        </set>
+        WHERE 1=1
+            AND user_id = #{userId}
+        ;
+    </update>
+
+    <delete id="deleteUser" parameterType="UserEntity">
+        DELETE FROM users
+        WHERE 1=1
+            AND user_id = #{userId}
+        ;
+    </delete>
+</mapper>
