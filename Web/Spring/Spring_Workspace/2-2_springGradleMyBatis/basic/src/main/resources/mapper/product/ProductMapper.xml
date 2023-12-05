@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace의 최종 파일은 xml과 동일한 이름으로 작성하는 것을 추천 -->
+<mapper namespace="com.example.basic.model.repository.ProductMapper">
+    <select id="selectProductAll" resultType="ProductDto">
+        SELECT
+            product_id
+            , product_name
+            , product_price
+        FROM product
+        WHERE 1=1
+        ;
+    </select>
+
+    <!-- Dynamic MyBatis -->
+    <select id="selectProduct" resultType="ProductDto">
+        SELECT
+            product_id
+            , product_name
+            , product_price
+        FROM product
+        WHERE 1=1
+        <if test='productPrice > 0'>
+            AND product_price >= #{productPrice}
+        </if>
+        <if test='productName != null and productName != ""'>
+            AND product_name LIKE concat('%', #{productName}, '%')
+        </if>
+        ;
+    </select>
+
+    <insert id="insertProduct" parameterType="ProductDto">
+        INSERT INTO product(product_name, product_price)
+        VALUES (#{productName}, #{productPrice});
+    </insert>
+
+    <update id="updateProduct" parameterType="ProductDto">
+        UPDATE product
+        <set>
+            <if test='productName != null and productName != ""'>
+                product_name = #{productName}
+            </if>
+            <if test='productPrice > 0 and productPrice != null'>
+                product_price = #{productPrice}
+            </if>
+        </set>
+        WHERE 1=1
+            AND product_id = #{productId}
+        ;
+    </update>
+
+    <delete id="deleteProduct" parameterType="ProductDto">
+        DELETE FROM product
+        WHERE 1=1
+            AND product_id = #{productId}
+        ;
+    </delete>
+</mapper>

@@ -1,0 +1,15 @@
+# Spring Boot 설정!!!
+spring:
+    # Spring Boot 로그 설정!!
+    output:
+        ansi:
+            enabled: always
+    
+    # Thymeleaf 설정
+    thymeleaf:
+        # .html 파일들은 thymeleaf이다
+        predix: classpath:templates/
+        check-template-location: true 
+        suffix: .html
+        mode: HTML
+        cache: false # default true, 개발 시에는 false로 두는 것이 좋음 

@@ -1,0 +1,26 @@
+# Spring Boot 설정!!!
+spring:
+    # Spring Boot 로그 설정!!
+    output:
+        ansi:
+            enabled: always
+    
+    # Database(MySQL) 설정!!
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        # log4jdbc 적용!!
+        # url: jdbc:log4jdbc:mysql://localhost:3306/examplesdb?userSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+        # driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        username: urstory
+        password: u1234
+
+    # JPA 설정
+    jpa:
+        hibernate:
+            # Java 파일로 Table을 선언 -> 자동으로 MySQL에 Table 생성해줌
+            ddl-auto: update 
+        properties:
+            hibernate:
+                show_sql: true
+                format_sql: true 
