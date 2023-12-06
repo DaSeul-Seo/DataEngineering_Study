@@ -1,0 +1,15 @@
+{{> /layout/header}}
+
+<h1>Book List Page</h1><br>
+
+{{#bookList}}
+    <ul>
+        <li>Book ID : {{bookId}}</li>
+        <li>Book isBn : {{isBn}}</li>
+        <li>Book Title : {{{bookTitle}}}</li>
+        <li>Book Author : {{author}}</li>
+        <li>Book Price : {{price}}</li>
+    </ul>
+{{/bookList}}
+
+{{> /layout/footer}}

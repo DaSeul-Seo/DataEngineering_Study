@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustache</title>
+</head>
+<body>
+    <h1>Mustache 예시</h1><br>
+    <h3>이름 : {{name}} </h3><br>
+    <h3>나이 : {{age}} </h3><br>
+    {{#person}}
+    <p>사람입니다.</p>
+    {{/person}}
+    {{^person}}
+    <p>신입니다.</p>
+    {{/person}}
+    <!-- 태그가 입력한 그대로 출력된다 -->
+    <h3>소속 : {{company}} </h3><br>
+    <!-- 태그가 적용되어 화면에 나타난다. -->
+    <h3>희망소속 : {{{company}}} </h3><br>
+</body>
+</html>
