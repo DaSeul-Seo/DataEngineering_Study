@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event</h1>
+    <!-- onclick 안에 직접 구현 -->
+    <input type="button" value="Please Click" onclick="alert('Click')" />
+    <br>
+    <!-- .js 파일에 구현 후, onclick 안에 함수 쓰기 -->
+    <input type="button" value="Count Rabbit" onclick="countRabbits()" />
+    <br>
+    <!-- .js 파일에서 조작가능 -->
+    <input type="button" value="Hello" id="hello" />
+    <br>
+    <!-- html 코드를 먼저 읽고 나서 js 파일 읽기 때문에 superman으로 결과가 나온다 -->
+    <input type="button" value="who R U?" id="who" onclick="alert('Batman')" />
+    <br>
+    <!-- addEventListener -->
+    <input type="button" value="What Food?" id="food" />
+    <br>
+    <!-- 객체 형태 핸들러 -->
+    <input type="button" value="What event" id="objInput" /> 
+    <br>
+    <!-- innerHTML -->
+    <input type="button" value="modify text" id="textInput" />
+    <br>
+    <span id="spanTag">Hello World</span>
+
+    <script src="./index.js"></script>
+</body>
+</html>
