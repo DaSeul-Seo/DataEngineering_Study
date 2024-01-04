@@ -1,14 +1,3 @@
-### jupyter 설정
-
-```bash
-jupyter notebook --generate-config
-vim
-sudo apt install vim -y
-vim /home/[계정]/.jupyter/jupyter_notebook_config.py
-```
-
----
-
 - api 서버(Fast API 등) 전에 메시지 서버(redis)를 띄어놓는다.
 - Queue에 데이터가 많이 쌓이면 터진다. ⇒ Queue 메모리를 늘려준다.
 - ⭐ 웹서버 VS WAS 차이점 알 것
@@ -39,10 +28,19 @@ vim /home/[계정]/.jupyter/jupyter_notebook_config.py
 
 ---
 
+### jupyter 설정
+
+```bash
+jupyter notebook --generate-config
+vim
+sudo apt install vim -y
+vim /home/[계정]/.jupyter/jupyter_notebook_config.py
+```
+
 ### ipython (Interactive Python)
 
 - jupyter server password
-- vi /home/root_user/.jupyter/jupyter_{}?config.json
+- vi /home/root_user/.jupyter/jupyter_server_config.json
 - 923열
     - 주석풀기
 - 927열

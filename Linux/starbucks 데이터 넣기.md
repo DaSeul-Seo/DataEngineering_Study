@@ -160,7 +160,7 @@ conn.commit()
 pd.read_sql_query("select * from starbucks", con=conn)
 ```
 
-1. pip install sqlalchemy
+2. pip install sqlalchemy
     1. ORM
     2. JPA 처럼 사용
     3. 서버에 설치 - mysqlclient 의존성 때문
