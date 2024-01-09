@@ -220,3 +220,30 @@ for pId in tqdm(playid):
   df["팀명"] = teamName
   df.to_csv(f"./player/{pId}.csv", index=False, encoding="utf-8-sig")
 ```
+
+- 강사님 코드
+
+```python
+from bs4 import BeautifulSoup as BS
+import requests
+import csv, os
+# 선수 프로필 정보 
+url = "https://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId={}"
+if os.path.isdir("./kbodata") == False:
+    os.mkdir("./kbodata")
+for id_ in playid[:]:
+    #print(url.format(x))
+    bs = BS(requests.get(url.format(id_)).text)
+    rt = [x.text.split(":")[-1].strip() for x in bs.find("div", class_="player_basic").findAll("li")]
+    try:
+        if rt[-3].find("달러") >= 0 :
+            rt[-3] = (int(rt[-3].replace("달러", "")) * 1320 ) / 10000
+        else:
+            rt[-3] = int(rt[-3].replace("만원", ""))
+    except:
+        pass
+    f = open(f"./kbodata/{id_}.csv", "w", encoding='utf-8')
+    csv_writer = csv.writer(f)
+    csv_writer.writerow(rt)
+    f.close()
+```
