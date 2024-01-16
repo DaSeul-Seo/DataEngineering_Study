@@ -131,6 +131,19 @@
 - DNS보다 /etx/hosts 파일이 먼저 구동되기 때문에 각 노드의 IP 가 먼저 읽힌다.
 - datanode1 ↔ datanode2 ↔ datanode3
 - 각자의 서버에서 데이터 처리 후 합친다. ⇒ MapReduce
+---
+
+### MapReduce
+
+![5](./img/hadoop5.png)
+
+- MapReduce를 진행할 때 기존의 모든 프레임워크에서는 계산된 데이터를 재사용하기 위해 파일 스토리지 시스템에 저장하고 읽는 구조
+- 단점
+    - 복제, 직렬화, 디스크 io 때문에 데이터 공유가 느려진다.
+    - map-reduce 단계마다 중간 결과를 재사용
+        - 데이터 복제, 디스크 i/o 직렬화로 인해 오버헤드 발생으로 시스템 속도가 느려진다.
+
+---
 - ip 변경
     - cd /etc/netplan/
     - network-namager-all.yaml 파일 수정
