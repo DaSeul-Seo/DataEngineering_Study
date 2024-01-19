@@ -43,9 +43,5 @@
     df.groupby("성별").agg( count("성별").alias("값")).show()
     ```
     
-- 세일즈?
-    - 주피터와 동일
-    - EMR 연동 가능
-
 - printschema()
     - 테이블 정보 출력 : 컬러명, 데이터 타입
