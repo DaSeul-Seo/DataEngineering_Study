@@ -62,11 +62,8 @@
 - jupyter 설치
     - pip3 install jupyter
 
----
-<aside>
-💡 Reference
-
-</aside>
+</br>
+### 💡 Reference
 
 - Virtual Box 설치 (Windows hosts)
     - https://www.virtualbox.org/wiki/Downloads

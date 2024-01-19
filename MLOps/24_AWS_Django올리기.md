@@ -73,3 +73,16 @@
     - 서버 실행
         - python3 manage.py runserver 0.0.0.0:8000
     - IP를 통해 접속하기
+
+### Django 추가작업
+
+- 수정파일
+    - pybo/templatetags/pybo_filter.py
+    - templates/pybo/question_detail.html
+    - pybo/urls.py
+    - pybo/views.py
+- AWS 인스턴스를 재시작 했기 때문에 IP가 변경되었음
+    - git remote 연결 해제
+        - git remote remove origin
+    - git remote 등록
+        - git remote add origin ssh://ubuntu@{IP}:/home/ubuntu/repos

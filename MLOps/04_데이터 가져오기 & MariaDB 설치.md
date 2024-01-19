@@ -282,10 +282,3 @@ for idx, row in tqdm(star_df.iterrows()):
     ```bash
     mysql -uroot -pqhdkscjfwj1!
     ```
-
----    
-
-<aside>
-💡 Reference
-
-</aside>

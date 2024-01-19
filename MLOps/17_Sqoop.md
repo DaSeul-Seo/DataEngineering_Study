@@ -239,13 +239,9 @@ wget https://archive.apache.org/dist/sqoop/1.99.7/sqoop-1.99.7-bin-hadoop200.tar
             ```bash
             GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1234';
             ```
-            
+</br>
 
----
-<aside>
-💡 Reference
-
-</aside>
+### 💡 Reference
 
 - time_zone Error
     - https://maliethy.github.io/posts/mysql_timezone/

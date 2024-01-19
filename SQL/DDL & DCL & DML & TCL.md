@@ -31,11 +31,10 @@
     - 부모 테이블의 row를 update / delete 할 경우 자동으로 자식 테이블에 매치되는 row도 동일하게 반영
     - 데이터 관리 편리 및 일관성 유지
 
-----
-<aside>
-💡 Reference
+</br>
 
-</aside>
+### 💡 Reference
+
 
 - CASCADE
     - [https://velog.io/@eensungkim/ON-DELETE-CASCADE-feat.-row-한-번에-지우는-방법-TIL-78일차](https://velog.io/@eensungkim/ON-DELETE-CASCADE-feat.-row-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%A7%80%EC%9A%B0%EB%8A%94-%EB%B0%A9%EB%B2%95-TIL-78%EC%9D%BC%EC%B0%A8)

@@ -218,9 +218,9 @@
     - jupyter 주소 들어가기
     - 파일을 만들어서 sc 실행
         - Spark UI 가 나오면 들어가서 확인
-    - jupyter 연동
-        - jupyter notebook --generate-config
-        - vim /home/hadoop/.jupyter/jupyter_notebook_config.py
+- jupyter 연동
+    - jupyter notebook --generate-config
+    - vim /home/hadoop/.jupyter/jupyter_notebook_config.py
         
         ```bash
         # password -> 123
@@ -235,6 +235,7 @@
         export PYSPARK_DRIVER_PYTHON=jupyter
         export PYSPARK_DRIVER_PYTHON_OPTS='notebook --ip=0.0.0.0'
         ```
+        
 
 ### spark Environment
 
@@ -262,6 +263,59 @@
         - hdfs dfs -mkdir -p /data/flight
         - hdfs dfs -put *.csv /data/flight/
 
+---
+
+### hadoop에 추가 데이터 넣기
+
+- cd {압축푼 폴더}/data/flight-data/json
+- hadoop에 폴더 만들고 데이터 넣기
+    - hdfs dfs -mkdir /data/flight/json
+    - hdfs dfs -put *.json /data/flight/json
+
+### 스키마
+
+- DB에서의 스키마의 개념은 동일
+    - DataFrame의 컬럼명과 데이터 타입을 정의
+- ETL(추출, 변환, 적재) 작업에 스파크를 사용한다면 직접 스키마를 정의해야함
+
+### Apache Zeppelin
+
+- 하둡의 에코 시스템
+- 데이터를 노트북 기반으로 interactive하게 데이터 분석을 할 수 있게 도와주는 프로그램
+
+---
+
+- 스파크는 함수가 다 분산되어 있다.
+- 표현식
+    - expr : 간단하게 사용 가능
+- spark 내 네임스페이스에 함수명은 유일하다.
+    - 동일 함수명을 설정하면 기존의 함수 기능은 실행 불가
+    - 마지막 함수명, 함수 기능으로 실행됨
+- 각 컬럼별 결측치 확인
+    
+    ```bash
+    # 사용자가 요청 => 아래 코드는 실행 계획만 잡힘
+    # show()하면 스테이지가 뜨고 동작을 한다.
+    df2 = df.select([count(when(col(c).contains('None') | \
+                        col(c).contains('NULL') | \
+                        (col(c) == '' ) | \
+                        col(c).isNull(), c
+                        )).alias(c)
+                        for c in df.columns])
+    ```
+    
+    ```bash
+    
+    df = df.withColumn('성별', when(col('성별') == 'm', 'M').otherwise(col('성별')))
+    
+    df.groupby("성별").agg( count("성별").alias("값")).show()
+    ```
+    
+- printschema()
+    - 테이블 정보 출력 : 컬러명, 데이터 타입
+
+---
+
 ### Error
 
 - 나의 환경
@@ -281,8 +335,6 @@
         unset 환경변수명
         ```
         
-        - https://www.leafcats.com/201
-        - https://blog.naver.com/PostView.naver?blogId=pmw9440&logNo=223070863428
     - CLI 환경에서 작업해야함
 
 ### Error - jupyter 사용 가능하게 수정
@@ -307,16 +359,18 @@
     # csv 파일을 불러와 Dataframe으로 만든다
     df = spark.read.csv("/data/bicycle/*", encoding='cp949', inferSchema = True, header=True)
     ```
-    
 
-<aside>
-💡 Reference
+</br>
 
-</aside>
+### 💡 Reference
+
 
 - Spark
     - https://spark.apache.org/
     - [https://minsw.github.io/2021/01/20/Spark-The-Definitive-Guide-1장/](https://minsw.github.io/2021/01/20/Spark-The-Definitive-Guide-1%EC%9E%A5/)
+- Spark 개념
+    - [https://velog.io/@jskim/Spark-설치-및-실행하기-Local-Mode](https://velog.io/@jskim/Spark-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0-Local-Mode)
+    - [https://velog.io/@jskim/Spark-배포-및-실행-방법에-대한-이해](https://velog.io/@jskim/Spark-%EB%B0%B0%ED%8F%AC-%EB%B0%8F-%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B4%ED%95%B4)
 - spark RDD 이해하기
     - https://bomwo.cc/posts/spark-rdd/
 - Partition /  Shuffle
@@ -324,3 +378,6 @@
     - https://firststep-de.tistory.com/54
 - OLTP /   OLAP
     - https://too612.tistory.com/511
+- Linux 환경변수 확인
+    - https://www.leafcats.com/201
+    - https://blog.naver.com/PostView.naver?blogId=pmw9440&logNo=223070863428

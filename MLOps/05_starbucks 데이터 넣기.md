@@ -236,10 +236,3 @@ pd.read_sql_query("select * from starbucks", con=conn)
     cd ~ 
     wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
     ```
-    
----
-
-<aside>
-💡 Reference
-
-</aside>
