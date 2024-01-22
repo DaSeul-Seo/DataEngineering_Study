@@ -8,8 +8,10 @@
             1. IPADDR=192.168.56.11
             2. nmcli device connect enp0s8
             
+            ---
             <aside>
-            💡 1) ifdown 장비명
+            1) ifdown 장비명
+            </br>
             2) ifup 장비명
             
             i. ifup / ifdown 명령어
@@ -21,6 +23,8 @@
             
             </aside>
             
+            ----
+
     3. wget 설치
         1. sudo yum install wget -y
     4. vim 설치

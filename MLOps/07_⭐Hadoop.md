@@ -184,4 +184,4 @@
         - stop-dfs.sh
         - start-dfs.sh
 - 확인
-    - http://192.168.56.102:50070/
+    - http://{IP}:50070/

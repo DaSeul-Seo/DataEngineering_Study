@@ -100,7 +100,7 @@ pip install pymysql
 import pymysql
 
 # sql 연결
-conn = pymysql.connect(host="192.168.56.102", user="encore", password="1q2w3e!", db="mydata")
+conn = pymysql.connect(host="{IP}", user="encore", password="1q2w3e!", db="mydata")
 # cursor : SQL 쿼리를 실행하고 그 결과를 가져오는 데 사용
 cursor = conn.cursor()
 cursor.execute("show tables")
@@ -177,7 +177,7 @@ pd.read_sql_query("select * from starbucks", con=conn)
         
         user = "encore"
         password = "1q2w3e!"
-        host = "192.168.56.102"
+        host = "{IP}"
         port = "3306"
         database = "mydata"
         
