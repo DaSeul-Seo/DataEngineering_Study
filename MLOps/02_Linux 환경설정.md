@@ -32,7 +32,7 @@
 
 ### Windows cmd
 
-- ssh {계정명}@ip
+- ssh {계정명}@IP
 - whoami : 현재 사용중인 계정 확인
 - 권한
     

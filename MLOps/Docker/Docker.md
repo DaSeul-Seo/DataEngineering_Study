@@ -177,7 +177,7 @@
     - mysql -u root -p encore
 - 기존 데이터 베이스 옮기기
     - windows에서 서버로 파일 옮기기
-        - scp ./encore_backup.sql [ubuntu@13.124.76.240](mailto:ubuntu@13.124.76.240):/home/ubuntu
+        - scp ./encore_backup.sql ubuntu@{IP}:/home/ubuntu
     - docker내 db에 옮기기
         - docker cp encore_backup.sql encoredb:/root/
 - docker 내 데이터베이스 복원하기

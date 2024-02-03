@@ -12,7 +12,7 @@
 - 모델 api 실행
     
     ```bash
-    python managy.py runserver 192.168.70.180:8000
+    python managy.py runserver {IP}:8000
     ```
     
 
@@ -48,7 +48,7 @@ user = 'encore'
 # MySQL 비밀번호
 password = '1234'
 # MySQL host
-host='192.168.70.31'
+host='{IP}'
 # MySQL port
 port = 3306
 # MySQL 데이터베이스명
@@ -71,7 +71,7 @@ df = pd.read_sql_query("select * from pybo_answer", con=engine)
 import requests
 
 # VM Server IP로 URL 날리기
-url = "http://192.168.70.180:8000/predict/"
+url = "http://{IP}:8000/predict/"
 for idx, row in df.iloc[10:,:].iterrows():
     r = requests.post(url, data={'text':row['content']})
     print(row['content'], end = "===>")

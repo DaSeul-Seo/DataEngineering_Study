@@ -77,7 +77,7 @@
                     <property>
                     	<name>javax.jdo.option.ConnectionPassword</name>
                     	<value>1234</value>
-                    	<description>password to use against metastore database</descriptio     n>
+                    	<description>password to use against metastore database</description>
                     </property>
                     ```
                     

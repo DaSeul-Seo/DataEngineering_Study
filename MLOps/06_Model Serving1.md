@@ -21,7 +21,7 @@
 - 압축풀기
     - 7zr x dog_model_service.7z
 - 모델 서빙
-    - python [manage.py](http://manage.py/) runserver 0.0.0.0:8080
+    - python manage.py runserver 0.0.0.0:8080
     - 에러 날 건데 tensorflow 때문에 발생
 - gRPC
     - 구글에서 만은 api

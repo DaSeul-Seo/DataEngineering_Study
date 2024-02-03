@@ -1,9 +1,9 @@
 - powertoy 다운로드
     - 호스트명으로 url 들어가서 확인하기 위해 설정
 - Cliet에서 hadoop 시작
-    - ssh namenode [start-dfs.sh](http://start-dfs.sh/)
-    - ssh secondnode [start-yarn.sh](http://start-yarn.sh/)
-    - ssh namenode [mr-jobhistory-daesmon.sh](http://mr-jobhistory-daesmon.sh/) start historyserver
+    - ssh namenode start-dfs.sh
+    - ssh secondnode start-yarn.sh
+    - ssh namenode mr-jobhistory-daesmon.sh start historyserver
     - ssh namenode jps
     - ssh secondnode jps
     - ssh datanode3 jps

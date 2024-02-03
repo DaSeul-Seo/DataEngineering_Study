@@ -148,32 +148,32 @@ wget https://archive.apache.org/dist/sqoop/1.99.7/sqoop-1.99.7-bin-hadoop200.tar
         
     - Sqoop DB 목록 확인
         - sqoop list-databases : sqoop을 통해 가져올 database 목록을 출력
-        - jdbc:mysql://192.168.70.31:3306/ --username root --password 1234 : 데이터베이스에 로그인
+        - jdbc:mysql://{IP}:3306/ --username root --password 1234 : 데이터베이스에 로그인
         
         ```bash
-        sqoop list-databases --connect jdbc:mysql://192.168.70.31:3306/ --username root --password 1234
+        sqoop list-databases --connect jdbc:mysql://{IP}:3306/ --username root --password 1234
         ```
         
     - Sqoop을 사용해 DB에 있는 데이터를 Hadoop에 넣기
         - sqoop import : sqoop을 통해 import
-        - jdbc:mysql://192.168.70.31:3306/hivedb --username root --password 1234 : 데이터베이스에 로그인
+        - jdbc:mysql://{IP}:3306/hivedb --username root --password 1234 : 데이터베이스에 로그인
         - --table subway : 가져올 테이블 이름 지정
         - -m 1 : 맵리듀스 작업을 한 개의 맵 태스크로 실행
         - --target-dir /sqoop/subway : 가져올 테이블을 hadoop에 저장할 곳 지정
         
         ```bash
-        sqoop import --connect jdbc:mysql://192.168.70.31:3306/hivedb --username root --password 1234 --table subway -m 1 --target-dir /sqoop/subway
+        sqoop import --connect jdbc:mysql://{IP}:3306/hivedb --username root --password 1234 --table subway -m 1 --target-dir /sqoop/subway
         ```
         
     - Hadoop에 넣은 후 hive 테이블에 자동으로 변환하여 저장
         - sqoop import : sqoop을 통해 import
-        - jdbc:mysql://192.168.70.31:3306/hivedb --username root --password 1234 : 데이터베이스에 로그인
+        - jdbc:mysql://{IP}:3306/hivedb --username root --password 1234 : 데이터베이스에 로그인
         - --table subway : 가져올 테이블 이름 지정
         - -m 1 : 맵리듀스 작업을 한 개의 맵 태스크로 실행
         - --hive-import : hive 테이블에 자동으로 변환하여 저장
         
         ```bash
-        sqoop import --connect jdbc:mysql://192.168.70.31:3306/hivedb --username root --password 1234 --table subway -m 1 --hive-import
+        sqoop import --connect jdbc:mysql://{IP}:3306/hivedb --username root --password 1234 --table subway -m 1 --hive-import
         ```
         
 
