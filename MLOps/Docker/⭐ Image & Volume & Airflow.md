@@ -84,7 +84,7 @@ docker run -it --name volume_dummy alicek106/volume_test
 - 볼륨 리스트 확인
     - docker volume ls
     
-    ![1](./img/docker1.png)
+    ![1](../img/docker1.png)
     
 - 볼륨 내용 확인
     - docker inspect myvol
@@ -138,7 +138,7 @@ docker run -it --name volume_dummy alicek106/volume_test
 - 호스트에서 ping {컨테이터 IP} 하면 연결됨
 - 각자 컨테이너에서 서로의 IP를 ping 해도 연결됨
 
-![2](./img/docker2.png)
+![2](../img/docker2.png)
 
 - 컨테이너를 생성하면 기본적으로 docker0 브리지를 통해 외부와 통신할 수 있는 환경을 사용할 수 있음
     
