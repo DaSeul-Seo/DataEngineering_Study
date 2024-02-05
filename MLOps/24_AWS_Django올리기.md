@@ -53,7 +53,7 @@
             - django/mysite (가상환경 X)
         - git init
         - 서버랑 연결 ⇒ 로컬에 있는 것 aws에 올리기
-            - git remote add origin ssh://ubuntu@3.38.98.111:/home/ubuntu/repos
+            - git remote add origin ssh://ubuntu@{IP}:/home/ubuntu/repos
         - 해당 프로젝트 올리기
             - git add .
             - git commit -m “first”

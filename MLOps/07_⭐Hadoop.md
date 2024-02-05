@@ -108,12 +108,12 @@
 - cat /etc/hosts 확인 - 고정 IP 할 경우
     
     ```bash
-    192.168.56.101  client
-    192.168.56.102  namenode
-    192.168.56.102  datanode1
-    192.168.56.103  secondnode
-    192.168.56.103  datanode2
-    192.168.56.104  datanode3
+    000.000.00.101  client
+    000.000.00.102  namenode
+    000.000.00.102  datanode1
+    000.000.00.103  secondnode
+    000.000.00.103  datanode2
+    000.000.00.104  datanode3
     ```
     
 

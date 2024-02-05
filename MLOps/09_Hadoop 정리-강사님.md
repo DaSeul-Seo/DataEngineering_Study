@@ -5,7 +5,7 @@
         1. yum install net-tools
     2. network 장비 ip 설정
         1. /etc/sysconfig/network-scripts 안의 네트워크 파일 수정
-            1. IPADDR=192.168.56.11
+            1. IPADDR={IP}
             2. nmcli device connect enp0s8
             
             ---
