@@ -140,6 +140,7 @@
   },
   "active": "8b982fa10cca1bde",
   "lastOpenFiles": [
+    "gitignore",
     "MLOps/Kubernetes/slack 자동화 등록하기.md",
     "MLOps/Kubernetes/사람인 airflow 등록하기 - 크롤링.md",
     "MLOps/img/kube8.png",
