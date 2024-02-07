@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "76e891b4070305c8",
+        "id": "463b25e75df4235e",
         "type": "tabs",
         "children": [
           {
-            "id": "bc4ec09f83de91b3",
+            "id": "8b982fa10cca1bde",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sadf.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sadf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sadf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "sadf.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,7 +138,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc4ec09f83de91b3",
+  "active": "8b982fa10cca1bde",
   "lastOpenFiles": [
     "sadf.md"
   ]
