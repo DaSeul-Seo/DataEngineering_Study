@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "463b25e75df4235e",
+        "id": "b4c86fb0c8be054a",
         "type": "tabs",
         "children": [
           {
-            "id": "8b982fa10cca1bde",
+            "id": "3c5befab72c0482d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b982fa10cca1bde",
+  "active": "3c5befab72c0482d",
   "lastOpenFiles": [
+    "MLOps/Kubernetes/k8s Service.md",
     "gitignore",
     "MLOps/Kubernetes/slack 자동화 등록하기.md",
     "MLOps/Kubernetes/사람인 airflow 등록하기 - 크롤링.md",
