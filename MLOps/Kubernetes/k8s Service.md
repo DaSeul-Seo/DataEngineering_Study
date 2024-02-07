@@ -137,15 +137,177 @@ kubectl get service
     - deploy
         
         ```bash
-        wget https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/deploy/static/provider/cloud/deploy.yaml
+        kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/aws/deploy.yaml
+        ```
+        
+    - baremetal
+        - 실제 리얼 머신
+        - 클라우드 안에서도 임대를 해준다.
+        
+        ```bash
+        # baremetal에서만 가능
+        kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+        ```
+        
+    - nginx로 다루는 컨트롤러
+        - 앞단을 만든것
+        
+        ![2](../img/kube6.png)
+        
+    - yaml 파일 만들기
+        
+        ```bash
+        vim ingress-config.yaml
         ```
         
         ```bash
-        kubectl apply -f deploy.yaml
+        apiVersion: networking.k8s.io/v1
+        kind: Ingress
+        metadata:
+          name: ingress-nginx
+          annotations:
+            nginx.ingress.kubernetes.io/rewrite-target: /
+            kubernetes.io/ingress.class: "nginx"
+        spec:
+          rules:
+          - http:
+              paths:
+              - path: /
+                pathType: Prefix
+                backend:
+                  service:
+                    name: hname-svc-default
+                    port:
+                      number: 80
+              - path: /ip
+                pathType: Prefix
+                backend:
+                  service:
+                    name: ip-svc
+                    port:
+                      number: 80
+        ```
+        
+    - yaml 적용
+    
+    ```bash
+    kubectl get ingress
+    ```
+    
+- service
+    - yaml 파일 생성
+        
+        ```bash
+        vim ingress.yaml
+        ```
+        
+        ```bash
+        apiVersion: v1
+        kind: Service
+        metadata:
+          name: nginx-ingress-controller
+          namespace: ingress-nginx
+        spec:
+          ports:
+          - name: http
+            protocol: TCP
+            port: 80
+            targetPort: 80
+            nodePort: 30100
+          - name: https
+            protocol: TCP
+            port: 443
+            targetPort: 443
+            nodePort: 30101
+          selector:
+            app.kubernetes.io/name: ingress-nginx
+          type: NodePort
+        ```
+        
+    - 적용
+        
+        ```bash
+        kubeclt apply -f ingress.yaml
+        ```
+        
+    - service 목록 확인
+        
+        ```bash
+        kubectl get services -n ingress-nginx
+        ```
+        
+    - dd
+        
+        ```bash
+        kubectl expose deployment in-hname-pod --name=hname-svc-default --port=80,443
+        kubectl expose deployment in-ip-pod --name=ip-svc --port=80,443
+        ```
+        
+    - 만든 Service 확인
+        
+        ```bash
+        kubectl get services
         ```
         
 
-### kubeflow
+### Load Balance
+
+- pod
+    
+    ```bash
+    kubectl create deployment hpa-hname-pods --image=sysnet4admin/echo-hname
+    kubectl expose deployment hpa-hname-pods --type=LoadBalancer --name=hpa-hname-svc --port=80
+    ```
+    
+- metrics
+    
+    ```bash
+    kubectl create -f https://raw.githubusercontent.com/k8s-1pro/install/main/ground/k8s-1.27/metrics-server-0.6.3/metrics-server.yaml
+    kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+    ```
+    
+    - 확인
+        - m -> milliunits -> 1000m이면 1개의 cpu
+    
+    ```bash
+    kubectl top pods
+    ```
+    
+    ![3](../img/kube7.png)
+    
+    - 리소스 조절
+        
+        ```bash
+        kubectl edit deployment hpa-hname-pods
+        
+        resources:
+        	limits:
+        		cpu: 50m
+        	requests:
+        		cpu: 10m
+        ```
+        
+        ```bash
+        kubectl top pods
+        ```
+        
+        ![3](../img/kube8.png)
+        
+    - dd
+        - min은 최소 파드의 수, max는 최대 파드의 수
+        - cpu-percent는 cpu 사용량이 50% 넘으면 autoscale 해줘
+        
+        ```bash
+        kubectl autoscale deployment hpa-hname-pods --min=1 --max=30 --cpu-percent=50
+        ```
+        
+
+### ECR (Registry)
+
+- ECR에 이미지를 넣어서 쓸 수 있다.
+        
+
+<!-- ### kubeflow
 
 - kustomize
     - kubectl create, apply 자동화
@@ -163,4 +325,4 @@ kubectl get service
     while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
     ```
     
-    - manifast
+    - manifast -->
