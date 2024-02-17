@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "917988380eceaf84",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4c86fb0c8be054a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c5befab72c0482d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee6e4c34bfad8505",
+    "type": "split",
+    "children": [
+      {
+        "id": "533f6ea18c26ae66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b454a3081984bf57",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b48b9c3161ae17ba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cefa1102e7fff834",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e04f68a321143ee6",
+    "type": "split",
+    "children": [
+      {
+        "id": "99d610cd98b103ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a66422f6e06f1c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f73e3efc1590393b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6628f35a96816d36",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe1fe532f1f366f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3c5befab72c0482d",
+  "lastOpenFiles": [
+    "MLOps/Kubernetes/k8s Service.md",
+    "gitignore",
+    "MLOps/Kubernetes/slack 자동화 등록하기.md",
+    "MLOps/Kubernetes/사람인 airflow 등록하기 - 크롤링.md",
+    "MLOps/img/kube8.png",
+    "MLOps/img/kube7.png",
+    "MLOps/img/kube6.png",
+    "sadf.md"
+  ]
+}
