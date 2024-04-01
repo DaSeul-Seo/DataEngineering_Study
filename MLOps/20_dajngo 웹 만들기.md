@@ -271,3 +271,11 @@
     ```
     
     ![1](./img/django1.png)
+
+----
+- asgi.py / wsgi.py
+    - Django의 WAS 서버이기에 직접 건드리는 일은 없다.
+- static 적용
+    - js, css
+- @api_view(["POST"]) 를 사용하기 위해 djangorestframework==3.13.1 다운로드 해야한다.
+    - 로그인 없이 게시판 내용을 확인하지 못함
