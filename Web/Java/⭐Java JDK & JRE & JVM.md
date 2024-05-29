@@ -82,7 +82,7 @@
         - Byte Code를 기계어로 변환시키기 위해 가상 CPU가 필요 ⇒ JVM의 역할
         - JVM이 Byte Code를 기계어 (Binary Code)로 변환
         - JVM에 의해 컴파일된 기계어는 바로 CPU에서 실행되어 사용자에게 서비스를 제공
-        - 다른 언어 클래스 파일만 있다면 JVM 사용 하근ㅇ
+        - 다른 언어 클래스 파일만 있다면 JVM 사용 가능
             - 실제 Java 외 다른 언어(클로저, 그루비, 코틀린 등)도 JVM 사용
 
 ### 💡 Binary Code / Byte Code
